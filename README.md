@@ -17,6 +17,43 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 - Final DRC status: **No DRC violations found**
 - Connectivity check summary: **Warnings present in checkDesign/checknetlist reports; review required during signoff**
 
+## Top-Level I/O and Debug Output Architecture
+
+### Inputs
+
+- 1 pin for clock
+- 1 pin for reset
+- 2 pins for instruction memory selection
+- 2 pins for output selection
+
+### Outputs
+
+- 32 pins forming a single 32-bit output bus
+- 1 pin for clk_out
+
+### I/O Functionality
+
+- A 2-bit input selects which instruction memory is active.
+- A separate 2-bit input selects which internal signals are routed to the output.
+- Based on the output-select input, a multiplexer routes different internal signals to the same 32-bit output bus.
+- This allows pin reuse for visibility into multiple processor internals without dedicating separate external output groups.
+
+### Output Modes (Output Select)
+
+- Mode 0: Four register values (each 8 bits) packed into 32 bits.
+- Mode 1: Lower 8 bits contain the program counter; upper 24 bits contain control signals.
+- Mode 2: Full 32-bit current instruction output.
+- Mode 3: ALU input 1 (8 bits), ALU input 2 (8 bits), ALU output (8 bits), and data memory output (8 bits), all packed into 32 bits.
+
+### Instruction Memory Implementation
+
+- Four separate instruction memories are implemented.
+- Each instruction memory contains around 32 instructions.
+- The memories are hardcoded in RTL (ROM-based).
+- A dedicated 2-bit input selects which instruction memory is active.
+- Each memory is intended to exercise a different processor function.
+- Only one instruction memory is accessed at a time based on the selection input.
+
 ## Flow Overview
 
 1. RTL setup and preprocessing
