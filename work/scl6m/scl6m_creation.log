@@ -1,0 +1,59 @@
+
+Creating Log File scl6m_creation.log in /home/thoshith/work_risc_v/scl6m/ 
+
+File created by makeProjectTree on 2026/04/14_14:41:44
+
+Project directory being created is: /home/thoshith/work_risc_v/scl6m 
+Flows file :/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/pdk/cdns/sclpdk_v3/HOTCODE/techs/flowDB/flows_file
+Flows being set up:
+Flow:SCLSL18_6M1L, Tech:ts18scl, Tech_ver:ts18scl_6M1L pex type:USG 
+pex type is USG : USG
+Users being set up:
+thoshith
+
+mkdir /home/thoshith/work_risc_v/scl6m/doc 
+mkdir /home/thoshith/work_risc_v/scl6m/gds_dir 
+mkdir /home/thoshith/work_risc_v/scl6m/dxf_dir 
+mkdir /home/thoshith/work_risc_v/scl6m/bond_info_dir 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs 
+Creating cds master directory tree
+mkdir /home/thoshith/work_risc_v/scl6m/cds_master 
+Creating project.lib 
+mkdir /home/thoshith/work_risc_v/scl6m/cds_master/design 
+calling lib flow pdk creation utility
+Creating user thoshith directory tree
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/design 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/doc 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/remote 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/scratch 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/simulation 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/hsp_dir 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/vhdl_dir 
+mkdir /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/iccraft 
+Creating cds.lib for User thoshith 
+Creating assura_tech.lib for User thoshith 
+Creating pvtech.lib for User thoshith 
+Copying /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/pdk/cdns/sclpdk_v3/HOTCODE/amslibs/cds_default/etc/templates/user.cdsinit to /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/.cdsinit
+cd /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds 
+cd /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds 
+Attaching library scl6m_thoshith to technology library ts018_scl_prim 
+Attaching library scl6m_master to technology library ts018_scl_prim 
+virtuoso -nograph -replay /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/pdk/cdns/sclpdk_v3/HOTCODE/amslibs/cds_default/etc/templates/attachLib.log 
+Libraries attached to technology library ts018_scl_prim 
+mkdir /home/thoshith/work_risc_v/scl6m/verification 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/ant 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/cbr_dir 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/ckm_dir 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/density 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/dfm 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/drc 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/drclvs 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/softerc 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/esd_lup 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/lup 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/lvs 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/pex 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/street 
+mkdir /home/thoshith/work_risc_v/scl6m/verification/stress 

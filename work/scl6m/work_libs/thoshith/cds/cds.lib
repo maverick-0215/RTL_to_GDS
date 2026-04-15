@@ -1,0 +1,6 @@
+# User cds.lib for User thoshith and Project scl6m 
+
+DEFINE scl6m_thoshith  /home/thoshith/work_risc_v/scl6m/work_libs/thoshith/cds/design  
+
+INCLUDE /home/thoshith/work_risc_v/scl6m/cds_master/project.lib 
+

@@ -1,0 +1,8 @@
+# project.lib for Project scl6m 
+
+DEFINE scl6m_master  /home/thoshith/work_risc_v/scl6m/cds_master/design  
+
+INCLUDE $RDS_CDS_LIB_VERS
+
+UNDEFINE ts018_scl_prim
+DEFINE ts018_scl_prim /home/thoshith/work_risc_v/scl6m/cds_master/SCLSL18_6M1L/ts018_scl_prim

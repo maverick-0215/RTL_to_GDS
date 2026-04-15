@@ -1,0 +1,2 @@
+SOFTINCLUDE /home/thoshith/cds.lib
+DEFINE RISCV_ICD /home/thoshith/work_risc_v/scl6m/signoff/RISCV_ICD
