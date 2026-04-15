@@ -108,6 +108,24 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 - [checknetlist.rpt](innovus%20files/netlist_to_gds/checknetlist.rpt)
 - [microprocessor_pad_top.drc.rpt](innovus%20files/drc/microprocessor_pad_top.drc.rpt)
 
+### Power Report
+
+
+---
+
+#### Key Observations
+- **Total Power**: **24.19 mW**
+- **Registers dominate (~97.6%)**
+- **Switching Power**: ~1.96%
+- **Leakage Power**: ~0.05%
+- **Memory Power**: 0 (inactive/not exercised)
+
+
+
+
+---
+
+
 ### Visual References
 
 - All flow screenshots are embedded directly in the Flow Overview steps above.
