@@ -1,0 +1,100 @@
+*** Message Type: info ***
+When: Wed Apr 15 08:18:57  IST IST 2026
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s086
+User: sia
+Host: localhost
+Platform: Linux/x86_64/3.10.0-693.el7.x86_64
+Started: Wed Apr 15 08:18:57  IST IST 2026
+Command: /opt/tools/Cadence/Cadence_tools/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:localhost:60684 -64BIT -nocopyright
+Work Directory: /home/sia/Work_sia/scl6m/RTL_to_GDS_DEMO/8bit_FFT_DEMO/fft_gls
+ 
+*** Message Type: info ***
+When: Wed Apr 15 08:19:02  IST IST 2026
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Apr 15 08:19:29  IST IST 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Apr 15 08:19:41  IST IST 2026
+Connect to Simulator
+      Design: work.ad01d0:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:      ncsim(64)       15.20-s086
+        User: sia
+        Host: localhost
+Time Started: Wed Apr 15 08:18:47  IST IST 2026
+  Process ID: 80269
+   Directory: /home/sia/Work_sia/scl6m/RTL_to_GDS_DEMO/8bit_FFT_DEMO/fft_gls
+     Command: irun -f ./zerodelaysimulation.f
+
+ 
+*** Message Type: info ***
+When: Wed Apr 15 08:19:42  IST IST 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Apr 15 08:20:07  IST IST 2026
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: Wed Apr 15 08:29:47  IST IST 2026
+can't find node "7" in ::tree1
+    (object "::replicator::parts35" method "::replicator::Parts::run" )
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow0.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow0.work.user.waveset.signallist -actions copy -id {80336 ::.waveWindow0.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow0.work.user.waveset.signallist -actions copy -id {80336 ::.waveWindow0.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow0.work.user.waveset _delayedStartDND .waveWindow0.work.user.waveset.signallist 7 70 167 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _delayedStartDND .waveWindow0.work.user.waveset.signallist 7 70 167 1}"
+    ("after" script)
+ 

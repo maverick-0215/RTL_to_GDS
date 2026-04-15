@@ -1,0 +1,1273 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Apr 15, 2026 at 20:18:41 IST
+irun
+	-f ./zerodelaysimulation.f
+		-gui
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/verilog/tsl18cio150/zero/pc3d01.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/verilog/tsl18cio150/zero/pc3o05.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/verilog/tsl18cio150/zero/pvdi.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/verilog/tsl18cio150/zero/pv0i.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/verilog/tsl18cio150/zero/pvda.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/verilog/tsl18cio150/zero/pv0a.v
+		microprocessor_pad_top_incremental.v
+		microprocessor_pad_top_tb.v
+		-access +rwc
+		-timescale 1ns/10ps
+		-relax
+		+delay_mode_zero
+Recompiling... reason: file './microprocessor_pad_top_incremental.v' is newer than expected.
+	expected: Wed Apr 15 20:09:48 2026
+	actual:   Wed Apr 15 20:18:18 2026
+file: microprocessor_pad_top_incremental.v
+	module work.pfrelr:v
+		errors: 0, warnings: 0
+		Caching library 'work' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ad01d0
+		ad01d2
+		ad01d4
+		adiode
+		adp1d0
+		adp1d1
+		adp1d2
+		adp1d4
+		ah01d0
+		ah01d2
+		ah01d4
+		an02d0
+		an03d0
+		an03d2
+		an03d7
+		an03da
+		an04d0
+		an04d7
+		an04da
+		an12d2
+		aoi211d2
+		aoi211d4
+		aoi21d2
+		aoi21d4
+		aoi221d2
+		aoi221d4
+		aoi2222d1
+		aoi2222d2
+		aoi2222d4
+		aoi222d2
+		aoi222d4
+		aoi22d2
+		aoi22d4
+		aoi311d2
+		aoi311d4
+		aoi31d4
+		aoi321d2
+		aoi321d4
+		aoi322d2
+		aoi322d4
+		aoim211d2
+		aoim211d4
+		aoim21d2
+		aoim21d4
+		aoim22d2
+		aoim22d4
+		aoim2m11d1
+		aoim2m11d2
+		aoim2m11d4
+		aoim311d1
+		aoim311d2
+		aoim311d4
+		aoim31d2
+		aoim31d4
+		aoim3m11d1
+		aoim3m11d2
+		aoim3m11d4
+		aon211d2
+		aon211d4
+		aor211d1
+		aor211d2
+		aor211d4
+		aor21d2
+		aor21d4
+		aor221d2
+		aor221d4
+		aor222d2
+		aor22d2
+		aor311d1
+		aor311d2
+		aor311d4
+		aor31d2
+		aor31d4
+		bh01d1
+		bufbd1
+		bufbd2
+		bufbd3
+		bufbd4
+		bufbd7
+		bufbda
+		bufbdf
+		bufbdk
+		buffd2
+		buffd4
+		buffd7
+		buffda
+		buftd1
+		buftd2
+		buftd4
+		buftd7
+		buftda
+		cg01d0
+		cg01d2
+		cg01d4
+		clk2d2
+		cload1
+		decfq1
+		decfq2
+		decfq4
+		decrq2
+		decrq4
+		denrq1
+		denrq2
+		denrq4
+		depfq1
+		depfq2
+		depfq4
+		deprq1
+		deprq2
+		deprq4
+		dfbfb1
+		dfbfb2
+		dfbfb4
+		dfbrb1
+		dfbrb2
+		dfbrb4
+		dfcfb1
+		dfcfb2
+		dfcfb4
+		dfcfq1
+		dfcfq2
+		dfcfq4
+		dfcrb1
+		dfcrb2
+		dfcrb4
+		dfcrn1
+		dfcrn2
+		dfcrn4
+		dfcrq2
+		dfnfb1
+		dfnfb2
+		dfnfb4
+		dfnrb1
+		dfnrb2
+		dfnrb4
+		dfnrn1
+		dfnrn2
+		dfnrn4
+		dfnrq2
+		dfnrq4
+		dfpfb1
+		dfpfb2
+		dfpfb4
+		dfprb2
+		dfprb4
+		dl01d1
+		dl01d2
+		dl01d4
+		dl02d1
+		dl02d2
+		dl02d4
+		dl03d1
+		dl03d2
+		dl03d4
+		dl04d1
+		dl04d2
+		dl04d4
+		gclfsn1
+		gclfsn2
+		gclfsn4
+		gclfsn7
+		gclfsna
+		gclrsn1
+		gclrsn2
+		gclrsn4
+		gclrsn7
+		gclrsna
+		gcnfnn1
+		gcnfnn2
+		gcnfnn4
+		gcnfnn7
+		gcnfnna
+		gcnrnn1
+		gcnrnn2
+		gcnrnn4
+		gcnrnn7
+		gcnrnna
+		inv0da
+		invbd7
+		invbda
+		invbdf
+		invbdk
+		invtd1
+		invtd2
+		invtd4
+		invtd7
+		invtda
+		jkbrb1
+		jkbrb2
+		jkbrb4
+		labhb1
+		labhb2
+		labhb4
+		lachq1
+		lachq2
+		lachq4
+		laclq1
+		laclq2
+		laclq4
+		lanhb1
+		lanhb2
+		lanhb4
+		lanhn1
+		lanhn2
+		lanhn4
+		lanhq1
+		lanhq2
+		lanhq4
+		lanht1
+		lanht2
+		lanht4
+		lanlb1
+		lanlb2
+		lanlb4
+		lanln1
+		lanln2
+		lanln4
+		lanlq1
+		lanlq2
+		lanlq4
+		mffnrb1
+		mffnrb2
+		mffnrb4
+		mi02d0
+		mi02d1
+		mi02d2
+		mi02d4
+		mx02d0
+		mx02d2
+		mx02d4
+		mx04d0
+		mx04d1
+		mx04d2
+		mx04d4
+		mx08d1
+		mx08d2
+		mx08d4
+		nd02d7
+		nd02da
+		nd03d0
+		nd03d4
+		nd03d7
+		nd04d7
+		nd04da
+		nd12d0
+		nd12d2
+		nd12d4
+		nd13d2
+		nd13d4
+		nd23d1
+		nd23d2
+		nr02d0
+		nr02d7
+		nr02da
+		nr03d0
+		nr03d2
+		nr03d4
+		nr03d7
+		nr03da
+		nr04d0
+		nr04d2
+		nr04d4
+		nr04d7
+		nr04da
+		nr13d2
+		nr23d2
+		nr23d4
+		oai211d2
+		oai211d4
+		oai21d4
+		oai221d2
+		oai221d4
+		oai2222d1
+		oai2222d2
+		oai2222d4
+		oai222d2
+		oai222d4
+		oai22d2
+		oai22d4
+		oai311d2
+		oai311d4
+		oai31d2
+		oai31d4
+		oai321d2
+		oai321d4
+		oai322d2
+		oai322d4
+		oaim211d2
+		oaim211d4
+		oaim21d2
+		oaim21d4
+		oaim22d2
+		oaim22d4
+		oaim2m11d1
+		oaim2m11d2
+		oaim2m11d4
+		oaim311d1
+		oaim311d2
+		oaim311d4
+		oaim31d2
+		oaim31d4
+		oaim3m11d1
+		oaim3m11d2
+		oaim3m11d4
+		oan211d2
+		oan211d4
+		or02d2
+		or02d7
+		or02da
+		or03d2
+		or03d7
+		or03da
+		or04d0
+		or04d2
+		or04d4
+		or04d7
+		or04da
+		ora211d2
+		ora211d4
+		ora21d2
+		ora21d4
+		ora311d1
+		ora311d2
+		ora31d1
+		ora31d2
+		ora31d4
+		sdbfb1
+		sdbfb2
+		sdbfb4
+		sdbrb1
+		sdbrb2
+		sdbrb4
+		sdcfb1
+		sdcfb2
+		sdcfb4
+		sdcfq1
+		sdcfq2
+		sdcfq4
+		sdcrb1
+		sdcrb2
+		sdcrb4
+		sdcrn1
+		sdcrn2
+		sdcrn4
+		sdcrq2
+		sdcrq4
+		sdnfb1
+		sdnfb2
+		sdnfb4
+		sdnrb1
+		sdnrb2
+		sdnrb4
+		sdnrn1
+		sdnrn2
+		sdnrn4
+		sdnrq1
+		sdnrq2
+		sdnrq4
+		sdpfb1
+		sdpfb2
+		sdpfb4
+		sdprb1
+		sdprb2
+		sdprb4
+		secfq1
+		secfq2
+		secfq4
+		secrq1
+		secrq2
+		secrq4
+		senrb1
+		senrb2
+		senrb4
+		senrq1
+		senrq2
+		senrq4
+		sepfq1
+		sepfq2
+		sepfq4
+		seprq1
+		seprq2
+		seprq4
+		skbrb1
+		skbrb2
+		skbrb4
+		slbhb1
+		slbhb2
+		slbhb4
+		slchq1
+		slchq2
+		slchq4
+		slclq1
+		slclq2
+		slclq4
+		slnhb1
+		slnhb2
+		slnhb4
+		slnhn1
+		slnhn2
+		slnhn4
+		slnhq1
+		slnhq2
+		slnhq4
+		slnht1
+		slnht2
+		slnht4
+		slnlb1
+		slnlb2
+		slnlb4
+		slnln1
+		slnln2
+		slnln4
+		slnlq1
+		slnlq2
+		slnlq4
+		srlab1
+		srlab2
+		srlab4
+		su01d0
+		su01d1
+		su01d2
+		su01d4
+		xn02d1
+		xn02d2
+		xn02d4
+		xn02d7
+		xn02da
+		xr02d2
+		xr02d4
+		xr02d7
+		xr02da
+		xr03d2
+		xr03d4
+		xr03d7
+		xr03da
+		pvdi
+		pv0i
+		pvda
+		pv0a
+		microprocessor_pad_top_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work.ad01d0:v <0x0291d6b4>
+			streams:   0, words:     0
+		work.ad01d1:v <0x0220f018>
+			streams:   0, words:     0
+		work.ad01d2:v <0x55099735>
+			streams:   0, words:     0
+		work.ad01d4:v <0x4e6c3492>
+			streams:   0, words:     0
+		work.adder:v <0x6e395ba7>
+			streams:   0, words:     0
+		work.adp1d0:v <0x08f00b7f>
+			streams:   1, words:   385
+		work.adp1d1:v <0x13a34e7e>
+			streams:   1, words:   385
+		work.adp1d2:v <0x0fb031ef>
+			streams:   1, words:   385
+		work.adp1d4:v <0x65bd1f7b>
+			streams:   1, words:   385
+		work.ah01d0:v <0x2a2063b6>
+			streams:   0, words:     0
+		work.ah01d1:v <0x6a511f5e>
+			streams:   0, words:     0
+		work.ah01d2:v <0x0e965831>
+			streams:   0, words:     0
+		work.ah01d4:v <0x383d12f9>
+			streams:   0, words:     0
+		work.aoim211d1:v <0x4c8764d7>
+			streams:   0, words:     0
+		work.aoim211d2:v <0x7746fc2f>
+			streams:   0, words:     0
+		work.aoim211d4:v <0x5bb4cb9e>
+			streams:   0, words:     0
+		work.aoim21d1:v <0x431d53b3>
+			streams:   0, words:     0
+		work.aoim21d2:v <0x7e59d989>
+			streams:   0, words:     0
+		work.aoim21d4:v <0x1daa290d>
+			streams:   0, words:     0
+		work.aoim22d1:v <0x3dc37da4>
+			streams:   0, words:     0
+		work.aoim22d2:v <0x5dd6f7c2>
+			streams:   0, words:     0
+		work.aoim22d4:v <0x7124c073>
+			streams:   0, words:     0
+		work.aoim2m11d1:v <0x5475a216>
+			streams:   0, words:     0
+		work.aoim2m11d2:v <0x6fb43aee>
+			streams:   0, words:     0
+		work.aoim2m11d4:v <0x43460d5f>
+			streams:   0, words:     0
+		work.aoim311d1:v <0x29cb44bf>
+			streams:   0, words:     0
+		work.aoim311d2:v <0x39b92659>
+			streams:   0, words:     0
+		work.aoim311d4:v <0x195de395>
+			streams:   0, words:     0
+		work.aoim31d1:v <0x1ebd1465>
+			streams:   0, words:     0
+		work.aoim31d2:v <0x257c8c9d>
+			streams:   0, words:     0
+		work.aoim31d4:v <0x098ebb2c>
+			streams:   0, words:     0
+		work.aoim3m11d1:v <0x6b185818>
+			streams:   0, words:     0
+		work.aoim3m11d2:v <0x7b6a3afe>
+			streams:   0, words:     0
+		work.aoim3m11d4:v <0x5b8eff32>
+			streams:   0, words:     0
+		work.control_decoder:v <0x7395c161>
+			streams:   0, words:     0
+		work.controlunit:v <0x0e52eb7d>
+			streams:   0, words:     0
+		work.core:v <0x7d29a05e>
+			streams:   0, words:     0
+		work.decfq1:v <0x69340a21>
+			streams:   0, words:     0
+		work.decfq2:v <0x43cfe60e>
+			streams:   0, words:     0
+		work.decfq4:v <0x27de8ec2>
+			streams:   0, words:     0
+		work.decode:v <0x54c540c6>
+			streams:   0, words:     0
+		work.decode_pipe:v <0x120b889f>
+			streams:   1, words:   146
+		work.decrq1:v <0x11090381>
+			streams:   0, words:     0
+		work.decrq2:v <0x1d8cea36>
+			streams:   0, words:     0
+		work.decrq4:v <0x799d82fa>
+			streams:   0, words:     0
+		work.denrq1:v <0x3401831c>
+			streams:   0, words:     0
+		work.denrq2:v <0x1b8ddb9e>
+			streams:   0, words:     0
+		work.denrq4:v <0x27580bbe>
+			streams:   0, words:     0
+		work.depfq1:v <0x25f8e7e7>
+			streams:   0, words:     0
+		work.depfq2:v <0x0f030bc8>
+			streams:   0, words:     0
+		work.depfq4:v <0x6b126304>
+			streams:   0, words:     0
+		work.deprq1:v <0x7bbbebdf>
+			streams:   0, words:     0
+		work.deprq2:v <0x514007f0>
+			streams:   0, words:     0
+		work.deprq4:v <0x35516f3c>
+			streams:   0, words:     0
+		work.dfbfb1:v <0x3eb1a36a>
+			streams:   0, words:     0
+		work.dfbfb2:v <0x0b54c467>
+			streams:   0, words:     0
+		work.dfbfb4:v <0x03536b59>
+			streams:   0, words:     0
+		work.dfbrb1:v <0x1d7a446c>
+			streams:   0, words:     0
+		work.dfbrb2:v <0x7f6b1470>
+			streams:   0, words:     0
+		work.dfbrb4:v <0x03f5d32d>
+			streams:   0, words:     0
+		work.dfcfb1:v <0x76b4bef6>
+			streams:   0, words:     0
+		work.dfcfb2:v <0x76abf626>
+			streams:   0, words:     0
+		work.dfcfb4:v <0x155806a2>
+			streams:   0, words:     0
+		work.dfcfq1:v <0x548b7e59>
+			streams:   0, words:     0
+		work.dfcfq2:v <0x407eeb9a>
+			streams:   0, words:     0
+		work.dfcfq4:v <0x030276cf>
+			streams:   0, words:     0
+		work.dfcrb1:v <0x56c91ff5>
+			streams:   0, words:     0
+		work.dfcrb2:v <0x56d65725>
+			streams:   0, words:     0
+		work.dfcrb4:v <0x3525a7a1>
+			streams:   0, words:     0
+		work.dfcrn1:v <0x4d25d53f>
+			streams:   0, words:     0
+		work.dfcrn2:v <0x1667702d>
+			streams:   0, words:     0
+		work.dfcrn4:v <0x20e23a09>
+			streams:   0, words:     0
+		work.dfcrq1:v <0x3512117a>
+			streams:   0, words:     0
+		work.dfcrq2:v <0x1b51329f>
+			streams:   0, words:     0
+		work.dfcrq4:v <0x629b19ec>
+			streams:   0, words:     0
+		work.dfnfb1:v <0x168699b8>
+			streams:   0, words:     0
+		work.dfnfb2:v <0x4dc43caa>
+			streams:   0, words:     0
+		work.dfnfb4:v <0x7b41768e>
+			streams:   0, words:     0
+		work.dfnrb1:v <0x1db39e17>
+			streams:   0, words:     0
+		work.dfnrb2:v <0x46f13b05>
+			streams:   0, words:     0
+		work.dfnrb4:v <0x70747121>
+			streams:   0, words:     0
+		work.dfnrn1:v <0x31f1d1b7>
+			streams:   0, words:     0
+		work.dfnrn2:v <0x25044474>
+			streams:   0, words:     0
+		work.dfnrn4:v <0x6678d921>
+			streams:   0, words:     0
+		work.dfnrq1:v <0x4573da41>
+			streams:   0, words:     0
+		work.dfnrq2:v <0x04ac7501>
+			streams:   0, words:     0
+		work.dfnrq4:v <0x3b792f16>
+			streams:   0, words:     0
+		work.dfpfb1:v <0x298fb678>
+			streams:   0, words:     0
+		work.dfpfb2:v <0x2990fea8>
+			streams:   0, words:     0
+		work.dfpfb4:v <0x4a630e2c>
+			streams:   0, words:     0
+		work.dfprb1:v <0x34a9d591>
+			streams:   0, words:     0
+		work.dfprb2:v <0x09ed5fab>
+			streams:   0, words:     0
+		work.dfprb4:v <0x6a1eaf2f>
+			streams:   0, words:     0
+		work.execute:v <0x7c6aa0f1>
+			streams:   0, words:     0
+		work.execute_forwarding:v <0x20508f8b>
+			streams:   0, words:     0
+		work.fetch:v <0x1ea7c93e>
+			streams:   0, words:     0
+		work.gclfsn1:v <0x42465de3>
+			streams:   0, words:     0
+		work.gclfsn2:v <0x18908d3e>
+			streams:   0, words:     0
+		work.gclfsn4:v <0x764c2ac5>
+			streams:   0, words:     0
+		work.gclfsn7:v <0x2c9afa18>
+			streams:   0, words:     0
+		work.gclfsna:v <0x593e0e4c>
+			streams:   0, words:     0
+		work.gclrsn1:v <0x20dc7f68>
+			streams:   0, words:     0
+		work.gclrsn2:v <0x322917a1>
+			streams:   0, words:     0
+		work.gclrsn4:v <0x4cb2c072>
+			streams:   0, words:     0
+		work.gclrsn7:v <0x5e47a8bb>
+			streams:   0, words:     0
+		work.gclrsna:v <0x5082918d>
+			streams:   0, words:     0
+		work.gcnfnn1:v <0x707a8997>
+			streams:   1, words:   488
+		work.gcnfnn2:v <0x2b382c85>
+			streams:   1, words:   488
+		work.gcnfnn4:v <0x1dbd66a1>
+			streams:   1, words:   488
+		work.gcnfnn7:v <0x46ffc3b3>
+			streams:   1, words:   488
+		work.gcnfnna:v <0x466af86d>
+			streams:   1, words:   488
+		work.gcnrnn1:v <0x077eb27b>
+			streams:   1, words:   502
+		work.gcnrnn2:v <0x5c3c1769>
+			streams:   1, words:   502
+		work.gcnrnn4:v <0x6ab95d4d>
+			streams:   1, words:   502
+		work.gcnrnn7:v <0x31fbf85f>
+			streams:   1, words:   502
+		work.gcnrnna:v <0x316ec381>
+			streams:   1, words:   502
+		work.instruc_mem_top_INIT_FILE8h00:v <0x71391556>
+			streams:   0, words:     0
+		work.instruction_memory_INIT_FILE8h00:v <0x54498678>
+			streams:   0, words:     0
+		work.jkbrb1:v <0x394c36c0>
+			streams:   0, words:     0
+		work.jkbrb2:v <0x794cd34e>
+			streams:   0, words:     0
+		work.jkbrb4:v <0x2b66c9e4>
+			streams:   0, words:     0
+		work.labhb1:v <0x1bac9fb1>
+			streams:   0, words:     0
+		work.labhb2:v <0x2e49f8bc>
+			streams:   0, words:     0
+		work.labhb4:v <0x264e5782>
+			streams:   0, words:     0
+		work.lachq1:v <0x65998941>
+			streams:   0, words:     0
+		work.lachq2:v <0x7c7f29e6>
+			streams:   0, words:     0
+		work.lachq4:v <0x1d99b91e>
+			streams:   0, words:     0
+		work.laclq1:v <0x06b34a3a>
+			streams:   0, words:     0
+		work.laclq2:v <0x20edd518>
+			streams:   0, words:     0
+		work.laclq4:v <0x5db65bce>
+			streams:   0, words:     0
+		work.lanhb1:v <0x6d91b1a7>
+			streams:   0, words:     0
+		work.lanhb2:v <0x3747617a>
+			streams:   0, words:     0
+		work.lanhb4:v <0x599bc681>
+			streams:   0, words:     0
+		work.lanhn1:v <0x3dc054bd>
+			streams:   0, words:     0
+		work.lanhn2:v <0x2426f41a>
+			streams:   0, words:     0
+		work.lanhn4:v <0x45c064e2>
+			streams:   0, words:     0
+		work.lanhq1:v <0x694a2c1b>
+			streams:   0, words:     0
+		work.lanhq2:v <0x10800a89>
+			streams:   0, words:     0
+		work.lanhq4:v <0x00d92689>
+			streams:   0, words:     0
+		work.lanht1:v <0x7ae5e6e4>
+			streams:   0, words:     0
+		work.lanht2:v <0x782af432>
+			streams:   0, words:     0
+		work.lanht4:v <0x2f9f0028>
+			streams:   0, words:     0
+		work.lanlb1:v <0x0e12f326>
+			streams:   0, words:     0
+		work.lanlb2:v <0x54c423fb>
+			streams:   0, words:     0
+		work.lanlb4:v <0x3a188400>
+			streams:   0, words:     0
+		work.lanln1:v <0x4cb80bc4>
+			streams:   0, words:     0
+		work.lanln2:v <0x555eab63>
+			streams:   0, words:     0
+		work.lanln4:v <0x34b83b9b>
+			streams:   0, words:     0
+		work.lanlq1:v <0x4a257b37>
+			streams:   0, words:     0
+		work.lanlq2:v <0x33ef5da5>
+			streams:   0, words:     0
+		work.lanlq4:v <0x23b671a5>
+			streams:   0, words:     0
+		work.mffnrb1:v <0x5d7254a7>
+			streams:   0, words:     0
+		work.mffnrb2:v <0x292833ab>
+			streams:   0, words:     0
+		work.mffnrb4:v <0x707a4d21>
+			streams:   0, words:     0
+		work.mi02d0:v <0x2e815c07>
+			streams:   0, words:     0
+		work.mi02d1:v <0x70367c02>
+			streams:   0, words:     0
+		work.mi02d2:v <0x7978aade>
+			streams:   0, words:     0
+		work.mi02d4:v <0x62bfd091>
+			streams:   0, words:     0
+		work.microprocessor:v <0x77c99a35>
+			streams:   0, words:     0
+		work.microprocessor_pad_top_tb:v <0x30639eb5>
+			streams:   9, words: 14825
+		work.mx02d0:v <0x0a210252>
+			streams:   0, words:     0
+		work.mx02d1:v <0x68cdce75>
+			streams:   0, words:     0
+		work.mx02d2:v <0x5dd8f48b>
+			streams:   0, words:     0
+		work.mx02d4:v <0x461f8ec4>
+			streams:   0, words:     0
+		work.mx04d0:v <0x2d220693>
+			streams:   0, words:     0
+		work.mx04d1:v <0x49da5934>
+			streams:   0, words:     0
+		work.mx04d2:v <0x6d886e2a>
+			streams:   0, words:     0
+		work.mx04d4:v <0x4fbbb6c5>
+			streams:   0, words:     0
+		work.oaim211d1:v <0x51de18eb>
+			streams:   0, words:     0
+		work.oaim211d2:v <0x31cb928d>
+			streams:   0, words:     0
+		work.oaim211d4:v <0x1d39a53c>
+			streams:   0, words:     0
+		work.oaim21d1:v <0x4e5d572c>
+			streams:   0, words:     0
+		work.oaim21d2:v <0x7319dd16>
+			streams:   0, words:     0
+		work.oaim21d4:v <0x10ea2d92>
+			streams:   0, words:     0
+		work.oaim22d1:v <0x3c746d9e>
+			streams:   0, words:     0
+		work.oaim22d2:v <0x5c61e7f8>
+			streams:   0, words:     0
+		work.oaim22d4:v <0x7093d049>
+			streams:   0, words:     0
+		work.oaim2m11d1:v <0x5d8d5d2e>
+			streams:   0, words:     0
+		work.oaim2m11d2:v <0x664cc5d6>
+			streams:   0, words:     0
+		work.oaim2m11d4:v <0x4abef267>
+			streams:   0, words:     0
+		work.oaim311d1:v <0x156d525d>
+			streams:   0, words:     0
+		work.oaim311d2:v <0x051f30bb>
+			streams:   0, words:     0
+		work.oaim311d4:v <0x25fbf577>
+			streams:   0, words:     0
+		work.oaim31d1:v <0x1f0a045f>
+			streams:   0, words:     0
+		work.oaim31d2:v <0x24cb9ca7>
+			streams:   0, words:     0
+		work.oaim31d4:v <0x0839ab16>
+			streams:   0, words:     0
+		work.oaim3m11d1:v <0x0af6d910>
+			streams:   0, words:     0
+		work.oaim3m11d2:v <0x1a84bbf6>
+			streams:   0, words:     0
+		work.oaim3m11d4:v <0x3a607e3a>
+			streams:   0, words:     0
+		work.pc:v <0x78adedb0>
+			streams:   0, words:     0
+		work.s_mx08d1:v <0x5fd89e5b>
+			streams:   1, words:  3459
+		work.s_mx08d2:v <0x75237274>
+			streams:   1, words:  3459
+		work.s_mx08d4:v <0x11321ab8>
+			streams:   1, words:  3459
+		work.sdbfb1:v <0x1d691e95>
+			streams:   0, words:     0
+		work.sdbfb2:v <0x7c137207>
+			streams:   0, words:     0
+		work.sdbfb4:v <0x6596ad62>
+			streams:   0, words:     0
+		work.sdbrb1:v <0x4126a4e4>
+			streams:   0, words:     0
+		work.sdbrb2:v <0x0126416a>
+			streams:   0, words:     0
+		work.sdbrb4:v <0x530c5bc0>
+			streams:   0, words:     0
+		work.sdcfb1:v <0x72caa5c4>
+			streams:   0, words:     0
+		work.sdcfb2:v <0x236ff0ea>
+			streams:   0, words:     0
+		work.sdcfb4:v <0x097f8d41>
+			streams:   0, words:     0
+		work.sdcfq1:v <0x0564a93c>
+			streams:   0, words:     0
+		work.sdcfq2:v <0x1516cbda>
+			streams:   0, words:     0
+		work.sdcfq4:v <0x35f20e16>
+			streams:   0, words:     0
+		work.sdcrb1:v <0x5559ee13>
+			streams:   0, words:     0
+		work.sdcrb2:v <0x04fcbb3d>
+			streams:   0, words:     0
+		work.sdcrb4:v <0x2eecc696>
+			streams:   0, words:     0
+		work.sdcrn1:v <0x4a7e490e>
+			streams:   0, words:     0
+		work.sdcrn2:v <0x29ed65d9>
+			streams:   0, words:     0
+		work.sdcrn4:v <0x5f2d8ce5>
+			streams:   0, words:     0
+		work.sdcrq1:v <0x1a0382e8>
+			streams:   0, words:     0
+		work.sdcrq2:v <0x0a71e00e>
+			streams:   0, words:     0
+		work.sdcrq4:v <0x2a9525c2>
+			streams:   0, words:     0
+		work.sdnfb1:v <0x5c2b3c2a>
+			streams:   0, words:     0
+		work.sdnfb2:v <0x4ede54e3>
+			streams:   0, words:     0
+		work.sdnfb4:v <0x30458330>
+			streams:   0, words:     0
+		work.sdnrb1:v <0x4505d208>
+			streams:   0, words:     0
+		work.sdnrb2:v <0x57f0bac1>
+			streams:   0, words:     0
+		work.sdnrb4:v <0x296b6d12>
+			streams:   0, words:     0
+		work.sdnrn1:v <0x5c37a786>
+			streams:   0, words:     0
+		work.sdnrn2:v <0x06e1775b>
+			streams:   0, words:     0
+		work.sdnrn4:v <0x683dd0a0>
+			streams:   0, words:     0
+		work.sdnrq1:v <0x63dc6dd4>
+			streams:   0, words:     0
+		work.sdnrq2:v <0x389ec8c6>
+			streams:   0, words:     0
+		work.sdnrq4:v <0x0e1b82e2>
+			streams:   0, words:     0
+		work.sdpfb1:v <0x752db503>
+			streams:   0, words:     0
+		work.sdpfb2:v <0x2488e02d>
+			streams:   0, words:     0
+		work.sdpfb4:v <0x0e989d86>
+			streams:   0, words:     0
+		work.sdprb1:v <0x52befed4>
+			streams:   0, words:     0
+		work.sdprb2:v <0x031babfa>
+			streams:   0, words:     0
+		work.sdprb4:v <0x290bd651>
+			streams:   0, words:     0
+		work.secfq1:v <0x1e205a51>
+			streams:   0, words:     0
+		work.secfq2:v <0x47fbcc0b>
+			streams:   0, words:     0
+		work.secfq4:v <0x26673109>
+			streams:   0, words:     0
+		work.secrq1:v <0x5da912e4>
+			streams:   0, words:     0
+		work.secrq2:v <0x3fb842f8>
+			streams:   0, words:     0
+		work.secrq4:v <0x432685a5>
+			streams:   0, words:     0
+		work.senrb1:v <0x2b9703a7>
+			streams:   0, words:     0
+		work.senrb2:v <0x5fcd64ab>
+			streams:   0, words:     0
+		work.senrb4:v <0x069f1a21>
+			streams:   0, words:     0
+		work.senrq1:v <0x1d659c35>
+			streams:   0, words:     0
+		work.senrq2:v <0x272e40b1>
+			streams:   0, words:     0
+		work.senrq4:v <0x53b9f9b9>
+			streams:   0, words:     0
+		work.sepfq1:v <0x25b5d4c4>
+			streams:   0, words:     0
+		work.sepfq2:v <0x7c6e429e>
+			streams:   0, words:     0
+		work.sepfq4:v <0x1df2bf9c>
+			streams:   0, words:     0
+		work.seprq1:v <0x0111fb27>
+			streams:   0, words:     0
+		work.seprq2:v <0x6300ab3b>
+			streams:   0, words:     0
+		work.seprq4:v <0x1f9e6c66>
+			streams:   0, words:     0
+		work.skbrb1:v <0x17809357>
+			streams:   0, words:     0
+		work.skbrb2:v <0x34783caa>
+			streams:   0, words:     0
+		work.skbrb4:v <0x7ad3b4a7>
+			streams:   0, words:     0
+		work.slbhb1:v <0x5261358b>
+			streams:   0, words:     0
+		work.slbhb2:v <0x16acedb7>
+			streams:   0, words:     0
+		work.slbhb4:v <0x349bc6ee>
+			streams:   0, words:     0
+		work.slchq1:v <0x652238fb>
+			streams:   0, words:     0
+		work.slchq2:v <0x251d7d2c>
+			streams:   0, words:     0
+		work.slchq4:v <0x46ae97a6>
+			streams:   0, words:     0
+		work.slclq1:v <0x237f0c96>
+			streams:   0, words:     0
+		work.slclq2:v <0x14145150>
+			streams:   0, words:     0
+		work.slclq4:v <0x65274f44>
+			streams:   0, words:     0
+		work.slnhb1:v <0x315b22e9>
+			streams:   0, words:     0
+		work.slnhb2:v <0x70fe6774>
+			streams:   0, words:     0
+		work.slnhb4:v <0x42525cdc>
+			streams:   0, words:     0
+		work.slnhn1:v <0x6092d462>
+			streams:   0, words:     0
+		work.slnhn2:v <0x70e0b684>
+			streams:   0, words:     0
+		work.slnhn4:v <0x50047348>
+			streams:   0, words:     0
+		work.slnhq1:v <0x23145d7d>
+			streams:   0, words:     0
+		work.slnhq2:v <0x21db4fab>
+			streams:   0, words:     0
+		work.slnhq4:v <0x766ebbb1>
+			streams:   0, words:     0
+		work.slnht1:v <0x5d40ff61>
+			streams:   0, words:     0
+		work.slnht2:v <0x21ac8c43>
+			streams:   0, words:     0
+		work.slnht4:v <0x0a5fbbb1>
+			streams:   0, words:     0
+		work.slnlb1:v <0x6a3f9769>
+			streams:   0, words:     0
+		work.slnlb2:v <0x2b9ad2f4>
+			streams:   0, words:     0
+		work.slnlb4:v <0x1936e95c>
+			streams:   0, words:     0
+		work.slnln1:v <0x10259221>
+			streams:   0, words:     0
+		work.slnln2:v <0x0057f0c7>
+			streams:   0, words:     0
+		work.slnln4:v <0x20b3350b>
+			streams:   0, words:     0
+		work.slnlq1:v <0x5890b13e>
+			streams:   0, words:     0
+		work.slnlq2:v <0x5a5fa3e8>
+			streams:   0, words:     0
+		work.slnlq4:v <0x0dea57f2>
+			streams:   0, words:     0
+		work.srlab1:v <0x76de1a24>
+			streams:   0, words:     0
+		work.srlab2:v <0x2c08caf9>
+			streams:   0, words:     0
+		work.srlab4:v <0x42d46d02>
+			streams:   0, words:     0
+		work.su01d0:v <0x3cf37eea>
+			streams:   0, words:     0
+		work.su01d1:v <0x539235d1>
+			streams:   0, words:     0
+		work.su01d2:v <0x6b6b3f6b>
+			streams:   0, words:     0
+		work.su01d4:v <0x700e9ccc>
+			streams:   0, words:     0
+		work.write_back:v <0x27397d0f>
+			streams:   0, words:     0
+		work.xn02d1:v <0x54157d94>
+			streams:   0, words:     0
+		work.xn02d2:v <0x647ab450>
+			streams:   0, words:     0
+		work.xn02d4:v <0x568ef66e>
+			streams:   0, words:     0
+		work.xn02d7:v <0x66e13faa>
+			streams:   0, words:     0
+		work.xn02da:v <0x4c4b72a6>
+			streams:   0, words:     0
+		work.xr02d1:v <0x441519e2>
+			streams:   0, words:     0
+		work.xr02d2:v <0x183d4158>
+			streams:   0, words:     0
+		work.xr02d4:v <0x2ac90366>
+			streams:   0, words:     0
+		work.xr02d7:v <0x1aa6caa2>
+			streams:   0, words:     0
+		work.xr02da:v <0x300c87ae>
+			streams:   0, words:     0
+		work.xr03d1:v <0x790a6943>
+			streams:   0, words:     0
+		work.xr03d2:v <0x0513da67>
+			streams:   0, words:     0
+		work.xr03d4:v <0x7d20bc2f>
+			streams:   0, words:     0
+		work.xr03d7:v <0x01390f0b>
+			streams:   0, words:     0
+		work.xr03da:v <0x677ca25c>
+			streams:   0, words:     0
+	Building instance specific data structures.
+        1   (1x)    0   x         ?          :   0   :   0;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21254|8): UDP table entry is redundant.
+        0   (1x)    x   0         ?          :   1   :   1;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21255|8): UDP table entry is redundant.
+        1   (1x)    1   x      ?        :   1   :   1;  // reducing pessimism
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21310|8): UDP table entry is redundant.
+        0   (1x)    x   1      ?        :   0   :   0;                          
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21311|8): UDP table entry is redundant.
+        1   (?x)    1   x         ?          :   1   :   1;  // ignore falling clock
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21636|8): UDP table entry is redundant.
+        0   (?x)    x   1         ?          :   0   :   0;  // ignore falling clock
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21637|8): UDP table entry is redundant.
+        0   (1x)    x         ?          :   0   :   0;                          
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21125|8): UDP table entry is redundant.
+        0   (0x)    x         ?          :   0   :   0;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21517|8): UDP table entry is redundant.
+        1   (1x)    x         ?          :   1   :   1;  // reducing pessimism
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21418|8): UDP table entry is redundant.
+        1   (0x)    x         ?          :   1   :   1;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,21727|8): UDP table entry is redundant.
+         0      (1x)    ?             :  0  :    0   ;   // Reducing pessimism.
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,22171|9): UDP table entry is redundant.
+         1      (1x)    ?             :  1  :    1   ;
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,22172|9): UDP table entry is redundant.
+         0       x      *     1     ?             :  0  :    0   ;   // Reducing pessimism.//AB
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,22480|9): UDP table entry is redundant.
+         1       x      1     *     ?             :  1  :    1   ;   // Reducing pessimism.//AB
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/verilog/vcs_sim_model/tsl18fs120_scl.v,22487|9): UDP table entry is redundant.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                9414     578
+		UDPs:                   4204      55
+		Primitives:            15681      13
+		Registers:              2922     283
+		Scalar wires:          11210       -
+		Expanded wires:            4       2
+		Always blocks:            13      13
+		Initial blocks:            4       4
+		Cont. assignments:         4     426
+		Pseudo assignments:        5       5
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: work.ad01d0:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /opt/tools/Cadence/Cadence_tools/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm microprocessor_pad_top_tb.tb_CLKOUT_pad microprocessor_pad_top_tb.tb_clk_pad microprocessor_pad_top_tb.tb_dbg_out_pad microprocessor_pad_top_tb.tb_dbg_sel_pad microprocessor_pad_top_tb.tb_mem_bank_sel_pad microprocessor_pad_top_tb.tb_rst_pad microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.instruction_execute microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.instruction_memstage microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.instruction_wb microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_fetchstage.instruction
+Created probe 1
+ncsim> reset
+Loaded snapshot work.ad01d0:v
+ncsim> run
+[0] Applying Reset...
+Time: 0 | RST: 1 | BankSel: 00 | DbgSel: 00 | DBG_OUT: xxxxxxxx
+Time: 15000 | RST: 0 | BankSel: 00 | DbgSel: 00 | DBG_OUT: 00000000
+[35000] Reset Complete. CPU running...
+Time: 35000 | RST: 1 | BankSel: 00 | DbgSel: 00 | DBG_OUT: 00000000
+[135000] Switching to Debug View 1...
+Time: 135000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 00000000
+Time: 145000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 4701800a
+Time: 155000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 4f01800b
+Time: 165000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 5701800c
+Time: 175000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 7701800d
+Time: 185000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 5f01800e
+Time: 195000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 6701800f
+Time: 205000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 6f018010
+Time: 215000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 7f018011
+Time: 225000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 87018012
+[235000] Switching to Debug View 2...
+Time: 235000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 8f018013
+Time: 245000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 40275a93
+Time: 255000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00816b13
+Time: 265000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0081fb93
+Time: 275000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 12345c37
+Time: 285000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00001c97
+Time: 295000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0040a023
+Time: 305000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00509223
+Time: 315000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00308423
+Time: 325000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0000ad03
+[335000] Switching to Memory Bank 1...
+Time: 335000 | RST: 1 | BankSel: 01 | DbgSel: 00 | DBG_OUT: 00409d83
+Time: 345000 | RST: 1 | BankSel: 01 | DbgSel: 00 | DBG_OUT: 010dff05
+[435000] Switching to Memory Bank 2...
+Time: 435000 | RST: 1 | BankSel: 10 | DbgSel: 00 | DBG_OUT: 010dff05
+[535000] Switching to Memory Bank 3...
+Time: 535000 | RST: 1 | BankSel: 11 | DbgSel: 00 | DBG_OUT: 010dff05
+[735000] Simulation Complete.
+Simulation complete via $finish(1) at time 735 NS + 0
+./microprocessor_pad_top_tb.v:88         $finish;
+ncsim> probe -create -shm microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.instruction
+Created probe 2
+ncsim> reset
+Loaded snapshot work.ad01d0:v
+ncsim> run
+[0] Applying Reset...
+Time: 0 | RST: 1 | BankSel: 00 | DbgSel: 00 | DBG_OUT: xxxxxxxx
+Time: 15000 | RST: 0 | BankSel: 00 | DbgSel: 00 | DBG_OUT: 00000000
+[35000] Reset Complete. CPU running...
+Time: 35000 | RST: 1 | BankSel: 00 | DbgSel: 00 | DBG_OUT: 00000000
+[135000] Switching to Debug View 1...
+Time: 135000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 00000000
+Time: 145000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 4701800a
+Time: 155000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 4f01800b
+Time: 165000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 5701800c
+Time: 175000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 7701800d
+Time: 185000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 5f01800e
+Time: 195000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 6701800f
+Time: 205000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 6f018010
+Time: 215000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 7f018011
+Time: 225000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 87018012
+[235000] Switching to Debug View 2...
+Time: 235000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 8f018013
+Time: 245000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 40275a93
+Time: 255000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00816b13
+Time: 265000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0081fb93
+Time: 275000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 12345c37
+Time: 285000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00001c97
+Time: 295000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0040a023
+Time: 305000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00509223
+Time: 315000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00308423
+Time: 325000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0000ad03
+[335000] Switching to Memory Bank 1...
+Time: 335000 | RST: 1 | BankSel: 01 | DbgSel: 00 | DBG_OUT: 00409d83
+Time: 345000 | RST: 1 | BankSel: 01 | DbgSel: 00 | DBG_OUT: 010dff05
+[435000] Switching to Memory Bank 2...
+Time: 435000 | RST: 1 | BankSel: 10 | DbgSel: 00 | DBG_OUT: 010dff05
+[535000] Switching to Memory Bank 3...
+Time: 535000 | RST: 1 | BankSel: 11 | DbgSel: 00 | DBG_OUT: 010dff05
+[735000] Simulation Complete.
+Simulation complete via $finish(1) at time 735 NS + 0
+./microprocessor_pad_top_tb.v:88         $finish;
+ncsim> probe -create -shm microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[1] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[2] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[3] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[4] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[5] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[6] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[7] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[8] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[9] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[10] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[11] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[12] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[13] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[14] } microprocessor_pad_top_tb.uut.u_microprocessor_core.u_core.u_decodestage.u_regfile0.@{\register[15] }
+Created probe 3
+ncsim> reset
+Loaded snapshot work.ad01d0:v
+ncsim> run
+[0] Applying Reset...
+Time: 0 | RST: 1 | BankSel: 00 | DbgSel: 00 | DBG_OUT: xxxxxxxx
+Time: 15000 | RST: 0 | BankSel: 00 | DbgSel: 00 | DBG_OUT: 00000000
+[35000] Reset Complete. CPU running...
+Time: 35000 | RST: 1 | BankSel: 00 | DbgSel: 00 | DBG_OUT: 00000000
+[135000] Switching to Debug View 1...
+Time: 135000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 00000000
+Time: 145000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 4701800a
+Time: 155000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 4f01800b
+Time: 165000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 5701800c
+Time: 175000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 7701800d
+Time: 185000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 5f01800e
+Time: 195000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 6701800f
+Time: 205000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 6f018010
+Time: 215000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 7f018011
+Time: 225000 | RST: 1 | BankSel: 00 | DbgSel: 01 | DBG_OUT: 87018012
+[235000] Switching to Debug View 2...
+Time: 235000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 8f018013
+Time: 245000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 40275a93
+Time: 255000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00816b13
+Time: 265000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0081fb93
+Time: 275000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 12345c37
+Time: 285000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00001c97
+Time: 295000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0040a023
+Time: 305000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00509223
+Time: 315000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 00308423
+Time: 325000 | RST: 1 | BankSel: 00 | DbgSel: 10 | DBG_OUT: 0000ad03
+[335000] Switching to Memory Bank 1...
+Time: 335000 | RST: 1 | BankSel: 01 | DbgSel: 00 | DBG_OUT: 00409d83
+Time: 345000 | RST: 1 | BankSel: 01 | DbgSel: 00 | DBG_OUT: 010dff05
+[435000] Switching to Memory Bank 2...
+Time: 435000 | RST: 1 | BankSel: 10 | DbgSel: 00 | DBG_OUT: 010dff05
+[535000] Switching to Memory Bank 3...
+Time: 535000 | RST: 1 | BankSel: 11 | DbgSel: 00 | DBG_OUT: 010dff05
+[735000] Simulation Complete.
+Simulation complete via $finish(1) at time 735 NS + 0
+./microprocessor_pad_top_tb.v:88         $finish;
+ncsim> 
