@@ -1,0 +1,13 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-ACCESS
++rwc
+-DELAY_MODE
+path
+-timescale
+1ns/10ps
+-RELAX
+-SDF_CMD_FILE
+sdf.cmd

@@ -1,0 +1,9 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-f
+./gatedelaysimulation.f
+-sdf_cmd_file
+sdf.cmd
+-clean

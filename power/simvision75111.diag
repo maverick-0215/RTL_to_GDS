@@ -1,0 +1,88 @@
+*** Message Type: info ***
+When: Wed Apr 15 10:33:39  IST IST 2026
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-s086
+User: roshini
+Host: localhost
+Platform: Linux/x86_64/3.10.0-693.el7.x86_64
+Started: Wed Apr 15 10:33:39  IST IST 2026
+Command: /opt/tools/Cadence/Cadence_tools/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:localhost:46377 -64BIT -nocopyright
+Work Directory: /home/roshini/work2/scl6m/kkk/8bit_FFT_DEMO/fft_power
+ 
+*** Message Type: info ***
+When: Wed Apr 15 10:33:45  IST IST 2026
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Wed Apr 15 10:34:18  IST IST 2026
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Wed Apr 15 10:34:32  IST IST 2026
+Connect to Simulator
+      Design: worklib.ad01d0:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim(64)       15.20-s086
+        User: roshini
+        Host: localhost
+Time Started: Wed Apr 15 10:33:27  IST IST 2026
+  Process ID: 74976
+   Directory: /home/roshini/work2/scl6m/kkk/8bit_FFT_DEMO/fft_power
+     Command: irun -f ./gatedelaysimulation.f -sdf_cmd_file sdf.cmd -clean
+
+ 
+*** Message Type: info ***
+When: Wed Apr 15 10:34:33  IST IST 2026
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Wed Apr 15 10:34:57  IST IST 2026
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Wed Apr 15 10:40:39  IST IST 2026
+Exit NC-Sim: user
+      Design: worklib.ad01d0:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim(64)       15.20-s086
+        User: roshini
+        Host: localhost
+Time Started: Wed Apr 15 10:33:27  IST IST 2026
+  Process ID: 74976
+   Directory: /home/roshini/work2/scl6m/kkk/8bit_FFT_DEMO/fft_power
+     Command: irun -f ./gatedelaysimulation.f -sdf_cmd_file sdf.cmd -clean
+
+ 
+*** Message Type: error ***
+When: Wed Apr 15 10:40:41  IST IST 2026
+NC-Sim Crashed:
+      Design: worklib.ad01d0:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:   ncsim(64)       15.20-s086
+        User: roshini
+        Host: localhost
+Time Started: Wed Apr 15 10:33:27  IST IST 2026
+  Process ID: 74976
+   Directory: /home/roshini/work2/scl6m/kkk/8bit_FFT_DEMO/fft_power
+     Command: irun -f ./gatedelaysimulation.f -sdf_cmd_file sdf.cmd -clean
+      Design: worklib.ad01d0:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:       ncsim(64)       15.20-s086
+        User: roshini
+        Host: localhost
+Time Started: Wed Apr 15 10:33:27  IST IST 2026
+  Process ID: 74976
+   Directory: /home/roshini/work2/scl6m/kkk/8bit_FFT_DEMO/fft_power
+     Command: irun -f ./gatedelaysimulation.f -sdf_cmd_file sdf.cmd -clean
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: Wed Apr 15 10:40:43  IST IST 2026
+SimVision Exit.
+ 

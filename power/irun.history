@@ -1,0 +1,1 @@
+s1(15Apr2026:22:55:26):  irun -f ./gatedelaysimulation.f -sdf_cmd_file sdf.cmd -clean 

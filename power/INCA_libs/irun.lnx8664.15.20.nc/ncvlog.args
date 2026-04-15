@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v
+/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3c01.v
+/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3d01.v
+/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3o05.v
+microprocessor_incremental.v
+micro_tb.sv
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./INCA_libs/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

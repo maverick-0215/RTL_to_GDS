@@ -1,0 +1,3330 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Apr 15, 2026 at 22:55:26 IST
+irun
+	-f ./gatedelaysimulation.f
+		-gui
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3c01.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3d01.v
+		/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3o05.v
+		microprocessor_incremental.v
+		micro_tb.sv
+		-access +rwc
+		-delay_mode path
+		-timescale 1ns/10ps
+		-relax
+	-sdf_cmd_file sdf.cmd
+	-clean
+irun: *N,CLEAN: Removing existing directory ./INCA_libs.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+ncvlog: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+ncvlog: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncvlog: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+ncvlog: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+ncvlog: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+file: /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v
+	module worklib.ad01d0:v
+		errors: 0, warnings: 0
+	module worklib.ad01d1:v
+		errors: 0, warnings: 0
+	module worklib.ad01d2:v
+		errors: 0, warnings: 0
+	module worklib.ad01d4:v
+		errors: 0, warnings: 0
+	module worklib.adiode:v
+		errors: 0, warnings: 0
+	module worklib.adp1d0:v
+		errors: 0, warnings: 0
+	module worklib.adp1d1:v
+		errors: 0, warnings: 0
+	module worklib.adp1d2:v
+		errors: 0, warnings: 0
+	module worklib.adp1d4:v
+		errors: 0, warnings: 0
+	module worklib.ah01d0:v
+		errors: 0, warnings: 0
+	module worklib.ah01d1:v
+		errors: 0, warnings: 0
+	module worklib.ah01d2:v
+		errors: 0, warnings: 0
+	module worklib.ah01d4:v
+		errors: 0, warnings: 0
+	module worklib.an02d0:v
+		errors: 0, warnings: 0
+	module worklib.an02d1:v
+		errors: 0, warnings: 0
+	module worklib.an02d2:v
+		errors: 0, warnings: 0
+	module worklib.an02d4:v
+		errors: 0, warnings: 0
+	module worklib.an02d7:v
+		errors: 0, warnings: 0
+	module worklib.an02da:v
+		errors: 0, warnings: 0
+	module worklib.an03d0:v
+		errors: 0, warnings: 0
+	module worklib.an03d1:v
+		errors: 0, warnings: 0
+	module worklib.an03d2:v
+		errors: 0, warnings: 0
+	module worklib.an03d4:v
+		errors: 0, warnings: 0
+	module worklib.an03d7:v
+		errors: 0, warnings: 0
+	module worklib.an03da:v
+		errors: 0, warnings: 0
+	module worklib.an04d0:v
+		errors: 0, warnings: 0
+	module worklib.an04d1:v
+		errors: 0, warnings: 0
+	module worklib.an04d2:v
+		errors: 0, warnings: 0
+	module worklib.an04d4:v
+		errors: 0, warnings: 0
+	module worklib.an04d7:v
+		errors: 0, warnings: 0
+	module worklib.an04da:v
+		errors: 0, warnings: 0
+	module worklib.an12d1:v
+		errors: 0, warnings: 0
+	module worklib.an12d2:v
+		errors: 0, warnings: 0
+	module worklib.an12d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi211d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi211d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi211d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi21d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi21d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi21d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi221d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi221d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi221d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi2222d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi2222d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi2222d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi222d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi222d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi222d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi22d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi22d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi22d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi311d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi311d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi311d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi31d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi31d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi31d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi321d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi321d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi321d4:v
+		errors: 0, warnings: 0
+	module worklib.aoi322d1:v
+		errors: 0, warnings: 0
+	module worklib.aoi322d2:v
+		errors: 0, warnings: 0
+	module worklib.aoi322d4:v
+		errors: 0, warnings: 0
+	module worklib.aoim211d1:v
+		errors: 0, warnings: 0
+	module worklib.aoim211d2:v
+		errors: 0, warnings: 0
+	module worklib.aoim211d4:v
+		errors: 0, warnings: 0
+	module worklib.aoim21d1:v
+		errors: 0, warnings: 0
+	module worklib.aoim21d2:v
+		errors: 0, warnings: 0
+	module worklib.aoim21d4:v
+		errors: 0, warnings: 0
+	module worklib.aoim22d1:v
+		errors: 0, warnings: 0
+	module worklib.aoim22d2:v
+		errors: 0, warnings: 0
+	module worklib.aoim22d4:v
+		errors: 0, warnings: 0
+	module worklib.aoim2m11d1:v
+		errors: 0, warnings: 0
+	module worklib.aoim2m11d2:v
+		errors: 0, warnings: 0
+	module worklib.aoim2m11d4:v
+		errors: 0, warnings: 0
+	module worklib.aoim311d1:v
+		errors: 0, warnings: 0
+	module worklib.aoim311d2:v
+		errors: 0, warnings: 0
+	module worklib.aoim311d4:v
+		errors: 0, warnings: 0
+	module worklib.aoim31d1:v
+		errors: 0, warnings: 0
+	module worklib.aoim31d2:v
+		errors: 0, warnings: 0
+	module worklib.aoim31d4:v
+		errors: 0, warnings: 0
+	module worklib.aoim3m11d1:v
+		errors: 0, warnings: 0
+	module worklib.aoim3m11d2:v
+		errors: 0, warnings: 0
+	module worklib.aoim3m11d4:v
+		errors: 0, warnings: 0
+	module worklib.aon211d1:v
+		errors: 0, warnings: 0
+	module worklib.aon211d2:v
+		errors: 0, warnings: 0
+	module worklib.aon211d4:v
+		errors: 0, warnings: 0
+	module worklib.aor211d1:v
+		errors: 0, warnings: 0
+	module worklib.aor211d2:v
+		errors: 0, warnings: 0
+	module worklib.aor211d4:v
+		errors: 0, warnings: 0
+	module worklib.aor21d1:v
+		errors: 0, warnings: 0
+	module worklib.aor21d2:v
+		errors: 0, warnings: 0
+	module worklib.aor21d4:v
+		errors: 0, warnings: 0
+	module worklib.aor221d1:v
+		errors: 0, warnings: 0
+	module worklib.aor221d2:v
+		errors: 0, warnings: 0
+	module worklib.aor221d4:v
+		errors: 0, warnings: 0
+	module worklib.aor222d1:v
+		errors: 0, warnings: 0
+	module worklib.aor222d2:v
+		errors: 0, warnings: 0
+	module worklib.aor222d4:v
+		errors: 0, warnings: 0
+	module worklib.aor22d1:v
+		errors: 0, warnings: 0
+	module worklib.aor22d2:v
+		errors: 0, warnings: 0
+	module worklib.aor22d4:v
+		errors: 0, warnings: 0
+	module worklib.aor311d1:v
+		errors: 0, warnings: 0
+	module worklib.aor311d2:v
+		errors: 0, warnings: 0
+	module worklib.aor311d4:v
+		errors: 0, warnings: 0
+	module worklib.aor31d1:v
+		errors: 0, warnings: 0
+	module worklib.aor31d2:v
+		errors: 0, warnings: 0
+	module worklib.aor31d4:v
+		errors: 0, warnings: 0
+	module worklib.bh01d1:v
+		errors: 0, warnings: 0
+	module worklib.bufbd1:v
+		errors: 0, warnings: 0
+	module worklib.bufbd2:v
+		errors: 0, warnings: 0
+	module worklib.bufbd3:v
+		errors: 0, warnings: 0
+	module worklib.bufbd4:v
+		errors: 0, warnings: 0
+	module worklib.bufbd7:v
+		errors: 0, warnings: 0
+	module worklib.bufbda:v
+		errors: 0, warnings: 0
+	module worklib.bufbdf:v
+		errors: 0, warnings: 0
+	module worklib.bufbdk:v
+		errors: 0, warnings: 0
+	module worklib.buffd1:v
+		errors: 0, warnings: 0
+	module worklib.buffd2:v
+		errors: 0, warnings: 0
+	module worklib.buffd3:v
+		errors: 0, warnings: 0
+	module worklib.buffd4:v
+		errors: 0, warnings: 0
+	module worklib.buffd7:v
+		errors: 0, warnings: 0
+	module worklib.buffda:v
+		errors: 0, warnings: 0
+	module worklib.buftd1:v
+		errors: 0, warnings: 0
+	module worklib.buftd2:v
+		errors: 0, warnings: 0
+	module worklib.buftd4:v
+		errors: 0, warnings: 0
+	module worklib.buftd7:v
+		errors: 0, warnings: 0
+	module worklib.buftda:v
+		errors: 0, warnings: 0
+	module worklib.cg01d0:v
+		errors: 0, warnings: 0
+	module worklib.cg01d1:v
+		errors: 0, warnings: 0
+	module worklib.cg01d2:v
+		errors: 0, warnings: 0
+	module worklib.cg01d4:v
+		errors: 0, warnings: 0
+	module worklib.clk2d2:v
+		errors: 0, warnings: 0
+	module worklib.cload1:v
+		errors: 0, warnings: 0
+	module worklib.decfq1:v
+		errors: 0, warnings: 0
+	module worklib.decfq2:v
+		errors: 0, warnings: 0
+	module worklib.decfq4:v
+		errors: 0, warnings: 0
+	module worklib.decrq1:v
+		errors: 0, warnings: 0
+	module worklib.decrq2:v
+		errors: 0, warnings: 0
+	module worklib.decrq4:v
+		errors: 0, warnings: 0
+	module worklib.denrq1:v
+		errors: 0, warnings: 0
+	module worklib.denrq2:v
+		errors: 0, warnings: 0
+	module worklib.denrq4:v
+		errors: 0, warnings: 0
+	module worklib.depfq1:v
+		errors: 0, warnings: 0
+	module worklib.depfq2:v
+		errors: 0, warnings: 0
+	module worklib.depfq4:v
+		errors: 0, warnings: 0
+	module worklib.deprq1:v
+		errors: 0, warnings: 0
+	module worklib.deprq2:v
+		errors: 0, warnings: 0
+	module worklib.deprq4:v
+		errors: 0, warnings: 0
+	module worklib.dfbfb1:v
+		errors: 0, warnings: 0
+	module worklib.dfbfb2:v
+		errors: 0, warnings: 0
+	module worklib.dfbfb4:v
+		errors: 0, warnings: 0
+	module worklib.dfbrb1:v
+		errors: 0, warnings: 0
+	module worklib.dfbrb2:v
+		errors: 0, warnings: 0
+	module worklib.dfbrb4:v
+		errors: 0, warnings: 0
+	module worklib.dfcfb1:v
+		errors: 0, warnings: 0
+	module worklib.dfcfb2:v
+		errors: 0, warnings: 0
+	module worklib.dfcfb4:v
+		errors: 0, warnings: 0
+	module worklib.dfcfq1:v
+		errors: 0, warnings: 0
+	module worklib.dfcfq2:v
+		errors: 0, warnings: 0
+	module worklib.dfcfq4:v
+		errors: 0, warnings: 0
+	module worklib.dfcrb1:v
+		errors: 0, warnings: 0
+	module worklib.dfcrb2:v
+		errors: 0, warnings: 0
+	module worklib.dfcrb4:v
+		errors: 0, warnings: 0
+	module worklib.dfcrn1:v
+		errors: 0, warnings: 0
+	module worklib.dfcrn2:v
+		errors: 0, warnings: 0
+	module worklib.dfcrn4:v
+		errors: 0, warnings: 0
+	module worklib.dfcrq1:v
+		errors: 0, warnings: 0
+	module worklib.dfcrq2:v
+		errors: 0, warnings: 0
+	module worklib.dfcrq4:v
+		errors: 0, warnings: 0
+	module worklib.dfnfb1:v
+		errors: 0, warnings: 0
+	module worklib.dfnfb2:v
+		errors: 0, warnings: 0
+	module worklib.dfnfb4:v
+		errors: 0, warnings: 0
+	module worklib.dfnrb1:v
+		errors: 0, warnings: 0
+	module worklib.dfnrb2:v
+		errors: 0, warnings: 0
+	module worklib.dfnrb4:v
+		errors: 0, warnings: 0
+	module worklib.dfnrn1:v
+		errors: 0, warnings: 0
+	module worklib.dfnrn2:v
+		errors: 0, warnings: 0
+	module worklib.dfnrn4:v
+		errors: 0, warnings: 0
+	module worklib.dfnrq1:v
+		errors: 0, warnings: 0
+	module worklib.dfnrq2:v
+		errors: 0, warnings: 0
+	module worklib.dfnrq4:v
+		errors: 0, warnings: 0
+	module worklib.dfpfb1:v
+		errors: 0, warnings: 0
+	module worklib.dfpfb2:v
+		errors: 0, warnings: 0
+	module worklib.dfpfb4:v
+		errors: 0, warnings: 0
+	module worklib.dfprb1:v
+		errors: 0, warnings: 0
+	module worklib.dfprb2:v
+		errors: 0, warnings: 0
+	module worklib.dfprb4:v
+		errors: 0, warnings: 0
+	module worklib.dl01d1:v
+		errors: 0, warnings: 0
+	module worklib.dl01d2:v
+		errors: 0, warnings: 0
+	module worklib.dl01d4:v
+		errors: 0, warnings: 0
+	module worklib.dl02d1:v
+		errors: 0, warnings: 0
+	module worklib.dl02d2:v
+		errors: 0, warnings: 0
+	module worklib.dl02d4:v
+		errors: 0, warnings: 0
+	module worklib.dl03d1:v
+		errors: 0, warnings: 0
+	module worklib.dl03d2:v
+		errors: 0, warnings: 0
+	module worklib.dl03d4:v
+		errors: 0, warnings: 0
+	module worklib.dl04d1:v
+		errors: 0, warnings: 0
+	module worklib.dl04d2:v
+		errors: 0, warnings: 0
+	module worklib.dl04d4:v
+		errors: 0, warnings: 0
+	module worklib.gclfsn1:v
+		errors: 0, warnings: 0
+	module worklib.gclfsn2:v
+		errors: 0, warnings: 0
+	module worklib.gclfsn4:v
+		errors: 0, warnings: 0
+	module worklib.gclfsn7:v
+		errors: 0, warnings: 0
+	module worklib.gclfsna:v
+		errors: 0, warnings: 0
+	module worklib.gclrsn1:v
+		errors: 0, warnings: 0
+	module worklib.gclrsn2:v
+		errors: 0, warnings: 0
+	module worklib.gclrsn4:v
+		errors: 0, warnings: 0
+	module worklib.gclrsn7:v
+		errors: 0, warnings: 0
+	module worklib.gclrsna:v
+		errors: 0, warnings: 0
+	module worklib.gcnfnn1:v
+		errors: 0, warnings: 0
+	module worklib.gcnfnn2:v
+		errors: 0, warnings: 0
+	module worklib.gcnfnn4:v
+		errors: 0, warnings: 0
+	module worklib.gcnfnn7:v
+		errors: 0, warnings: 0
+	module worklib.gcnfnna:v
+		errors: 0, warnings: 0
+	module worklib.gcnrnn1:v
+		errors: 0, warnings: 0
+	module worklib.gcnrnn2:v
+		errors: 0, warnings: 0
+	module worklib.gcnrnn4:v
+		errors: 0, warnings: 0
+	module worklib.gcnrnn7:v
+		errors: 0, warnings: 0
+	module worklib.gcnrnna:v
+		errors: 0, warnings: 0
+	module worklib.inv0d0:v
+		errors: 0, warnings: 0
+	module worklib.inv0d1:v
+		errors: 0, warnings: 0
+	module worklib.inv0d2:v
+		errors: 0, warnings: 0
+	module worklib.inv0d4:v
+		errors: 0, warnings: 0
+	module worklib.inv0d7:v
+		errors: 0, warnings: 0
+	module worklib.inv0da:v
+		errors: 0, warnings: 0
+	module worklib.invbd2:v
+		errors: 0, warnings: 0
+	module worklib.invbd4:v
+		errors: 0, warnings: 0
+	module worklib.invbd7:v
+		errors: 0, warnings: 0
+	module worklib.invbda:v
+		errors: 0, warnings: 0
+	module worklib.invbdf:v
+		errors: 0, warnings: 0
+	module worklib.invbdk:v
+		errors: 0, warnings: 0
+	module worklib.invtd1:v
+		errors: 0, warnings: 0
+	module worklib.invtd2:v
+		errors: 0, warnings: 0
+	module worklib.invtd4:v
+		errors: 0, warnings: 0
+	module worklib.invtd7:v
+		errors: 0, warnings: 0
+	module worklib.invtda:v
+		errors: 0, warnings: 0
+	module worklib.jkbrb1:v
+		errors: 0, warnings: 0
+	module worklib.jkbrb2:v
+		errors: 0, warnings: 0
+	module worklib.jkbrb4:v
+		errors: 0, warnings: 0
+	module worklib.labhb1:v
+		errors: 0, warnings: 0
+	module worklib.labhb2:v
+		errors: 0, warnings: 0
+	module worklib.labhb4:v
+		errors: 0, warnings: 0
+	module worklib.lachq1:v
+		errors: 0, warnings: 0
+	module worklib.lachq2:v
+		errors: 0, warnings: 0
+	module worklib.lachq4:v
+		errors: 0, warnings: 0
+	module worklib.laclq1:v
+		errors: 0, warnings: 0
+	module worklib.laclq2:v
+		errors: 0, warnings: 0
+	module worklib.laclq4:v
+		errors: 0, warnings: 0
+	module worklib.lanhb1:v
+		errors: 0, warnings: 0
+	module worklib.lanhb2:v
+		errors: 0, warnings: 0
+	module worklib.lanhb4:v
+		errors: 0, warnings: 0
+	module worklib.lanhn1:v
+		errors: 0, warnings: 0
+	module worklib.lanhn2:v
+		errors: 0, warnings: 0
+	module worklib.lanhn4:v
+		errors: 0, warnings: 0
+	module worklib.lanhq1:v
+		errors: 0, warnings: 0
+	module worklib.lanhq2:v
+		errors: 0, warnings: 0
+	module worklib.lanhq4:v
+		errors: 0, warnings: 0
+	module worklib.lanht1:v
+		errors: 0, warnings: 0
+	module worklib.lanht2:v
+		errors: 0, warnings: 0
+	module worklib.lanht4:v
+		errors: 0, warnings: 0
+	module worklib.lanlb1:v
+		errors: 0, warnings: 0
+	module worklib.lanlb2:v
+		errors: 0, warnings: 0
+	module worklib.lanlb4:v
+		errors: 0, warnings: 0
+	module worklib.lanln1:v
+		errors: 0, warnings: 0
+	module worklib.lanln2:v
+		errors: 0, warnings: 0
+	module worklib.lanln4:v
+		errors: 0, warnings: 0
+	module worklib.lanlq1:v
+		errors: 0, warnings: 0
+	module worklib.lanlq2:v
+		errors: 0, warnings: 0
+	module worklib.lanlq4:v
+		errors: 0, warnings: 0
+	module worklib.mffnrb1:v
+		errors: 0, warnings: 0
+	module worklib.mffnrb2:v
+		errors: 0, warnings: 0
+	module worklib.mffnrb4:v
+		errors: 0, warnings: 0
+	module worklib.mi02d0:v
+		errors: 0, warnings: 0
+	module worklib.mi02d1:v
+		errors: 0, warnings: 0
+	module worklib.mi02d2:v
+		errors: 0, warnings: 0
+	module worklib.mi02d4:v
+		errors: 0, warnings: 0
+	primitive worklib.U_AO3:v
+		errors: 0, warnings: 0
+	primitive worklib.U_ADDR2_C:v
+		errors: 0, warnings: 0
+	primitive worklib.U_ADDR2_S:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_P:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_P_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_N_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_N_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_P_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_P_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_N_SB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_N_SB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_P_SB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_EN_P_SB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N_RB_SB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N_R_S_NO_QN:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N_RB_SB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N_RB_SB_QN:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_N_SB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P_RB_SB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P_RB_SB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P_SB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P_SB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_SC_EN_P:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_SC_EN_P_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_SC_EN_P_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_SC_EN_P_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_SC_EN_P_SB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_SC_EN_P_SB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_N:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_N_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P:v
+		errors: 0, warnings: 0
+	primitive worklib.U_FD_P_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_N_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P_SB_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P_SB_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P_SB_RB_QN:v
+		errors: 0, warnings: 0
+	primitive worklib.U_LD_P_SB_RB_QN_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_MUX_2_1:v
+		errors: 0, warnings: 0
+	primitive worklib.U_MUX_4_2:v
+		errors: 0, warnings: 0
+	primitive worklib.U_L_SB_RB_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_L_SB_RB_QN_NO:v
+		errors: 0, warnings: 0
+	primitive worklib.U_L_SB_RB:v
+		errors: 0, warnings: 0
+	primitive worklib.U_L_SB_RB_QN:v
+		errors: 0, warnings: 0
+	primitive worklib.U_MUX_2_1_INV:v
+		errors: 0, warnings: 0
+	primitive worklib.U_SUB2_C:v
+		errors: 0, warnings: 0
+	primitive worklib.U_SUB2_D:v
+		errors: 0, warnings: 0
+	module worklib.mx02d0:v
+		errors: 0, warnings: 0
+	module worklib.mx02d1:v
+		errors: 0, warnings: 0
+	module worklib.mx02d2:v
+		errors: 0, warnings: 0
+	module worklib.mx02d4:v
+		errors: 0, warnings: 0
+	module worklib.mx04d0:v
+		errors: 0, warnings: 0
+	module worklib.mx04d1:v
+		errors: 0, warnings: 0
+	module worklib.mx04d2:v
+		errors: 0, warnings: 0
+	module worklib.mx04d4:v
+		errors: 0, warnings: 0
+	module worklib.mx08d1:v
+		errors: 0, warnings: 0
+	module worklib.s_mx08d1:v
+		errors: 0, warnings: 0
+	module worklib.mx08d2:v
+		errors: 0, warnings: 0
+	module worklib.s_mx08d2:v
+		errors: 0, warnings: 0
+	module worklib.mx08d4:v
+		errors: 0, warnings: 0
+	module worklib.s_mx08d4:v
+		errors: 0, warnings: 0
+	module worklib.nd02d0:v
+		errors: 0, warnings: 0
+	module worklib.nd02d1:v
+		errors: 0, warnings: 0
+	module worklib.nd02d2:v
+		errors: 0, warnings: 0
+	module worklib.nd02d4:v
+		errors: 0, warnings: 0
+	module worklib.nd02d7:v
+		errors: 0, warnings: 0
+	module worklib.nd02da:v
+		errors: 0, warnings: 0
+	module worklib.nd03d0:v
+		errors: 0, warnings: 0
+	module worklib.nd03d1:v
+		errors: 0, warnings: 0
+	module worklib.nd03d2:v
+		errors: 0, warnings: 0
+	module worklib.nd03d4:v
+		errors: 0, warnings: 0
+	module worklib.nd03d7:v
+		errors: 0, warnings: 0
+	module worklib.nd03da:v
+		errors: 0, warnings: 0
+	module worklib.nd04d0:v
+		errors: 0, warnings: 0
+	module worklib.nd04d1:v
+		errors: 0, warnings: 0
+	module worklib.nd04d2:v
+		errors: 0, warnings: 0
+	module worklib.nd04d4:v
+		errors: 0, warnings: 0
+	module worklib.nd04d7:v
+		errors: 0, warnings: 0
+	module worklib.nd04da:v
+		errors: 0, warnings: 0
+	module worklib.nd12d0:v
+		errors: 0, warnings: 0
+	module worklib.nd12d1:v
+		errors: 0, warnings: 0
+	module worklib.nd12d2:v
+		errors: 0, warnings: 0
+	module worklib.nd12d4:v
+		errors: 0, warnings: 0
+	module worklib.nd13d1:v
+		errors: 0, warnings: 0
+	module worklib.nd13d2:v
+		errors: 0, warnings: 0
+	module worklib.nd13d4:v
+		errors: 0, warnings: 0
+	module worklib.nd23d1:v
+		errors: 0, warnings: 0
+	module worklib.nd23d2:v
+		errors: 0, warnings: 0
+	module worklib.nd23d4:v
+		errors: 0, warnings: 0
+	module worklib.nr02d0:v
+		errors: 0, warnings: 0
+	module worklib.nr02d1:v
+		errors: 0, warnings: 0
+	module worklib.nr02d2:v
+		errors: 0, warnings: 0
+	module worklib.nr02d4:v
+		errors: 0, warnings: 0
+	module worklib.nr02d7:v
+		errors: 0, warnings: 0
+	module worklib.nr02da:v
+		errors: 0, warnings: 0
+	module worklib.nr03d0:v
+		errors: 0, warnings: 0
+	module worklib.nr03d1:v
+		errors: 0, warnings: 0
+	module worklib.nr03d2:v
+		errors: 0, warnings: 0
+	module worklib.nr03d4:v
+		errors: 0, warnings: 0
+	module worklib.nr03d7:v
+		errors: 0, warnings: 0
+	module worklib.nr03da:v
+		errors: 0, warnings: 0
+	module worklib.nr04d0:v
+		errors: 0, warnings: 0
+	module worklib.nr04d1:v
+		errors: 0, warnings: 0
+	module worklib.nr04d2:v
+		errors: 0, warnings: 0
+	module worklib.nr04d4:v
+		errors: 0, warnings: 0
+	module worklib.nr04d7:v
+		errors: 0, warnings: 0
+	module worklib.nr04da:v
+		errors: 0, warnings: 0
+	module worklib.nr13d1:v
+		errors: 0, warnings: 0
+	module worklib.nr13d2:v
+		errors: 0, warnings: 0
+	module worklib.nr13d4:v
+		errors: 0, warnings: 0
+	module worklib.nr23d1:v
+		errors: 0, warnings: 0
+	module worklib.nr23d2:v
+		errors: 0, warnings: 0
+	module worklib.nr23d4:v
+		errors: 0, warnings: 0
+	module worklib.oai211d1:v
+		errors: 0, warnings: 0
+	module worklib.oai211d2:v
+		errors: 0, warnings: 0
+	module worklib.oai211d4:v
+		errors: 0, warnings: 0
+	module worklib.oai21d1:v
+		errors: 0, warnings: 0
+	module worklib.oai21d2:v
+		errors: 0, warnings: 0
+	module worklib.oai21d4:v
+		errors: 0, warnings: 0
+	module worklib.oai221d1:v
+		errors: 0, warnings: 0
+	module worklib.oai221d2:v
+		errors: 0, warnings: 0
+	module worklib.oai221d4:v
+		errors: 0, warnings: 0
+	module worklib.oai2222d1:v
+		errors: 0, warnings: 0
+	module worklib.oai2222d2:v
+		errors: 0, warnings: 0
+	module worklib.oai2222d4:v
+		errors: 0, warnings: 0
+	module worklib.oai222d1:v
+		errors: 0, warnings: 0
+	module worklib.oai222d2:v
+		errors: 0, warnings: 0
+	module worklib.oai222d4:v
+		errors: 0, warnings: 0
+	module worklib.oai22d1:v
+		errors: 0, warnings: 0
+	module worklib.oai22d2:v
+		errors: 0, warnings: 0
+	module worklib.oai22d4:v
+		errors: 0, warnings: 0
+	module worklib.oai311d1:v
+		errors: 0, warnings: 0
+	module worklib.oai311d2:v
+		errors: 0, warnings: 0
+	module worklib.oai311d4:v
+		errors: 0, warnings: 0
+	module worklib.oai31d1:v
+		errors: 0, warnings: 0
+	module worklib.oai31d2:v
+		errors: 0, warnings: 0
+	module worklib.oai31d4:v
+		errors: 0, warnings: 0
+	module worklib.oai321d1:v
+		errors: 0, warnings: 0
+	module worklib.oai321d2:v
+		errors: 0, warnings: 0
+	module worklib.oai321d4:v
+		errors: 0, warnings: 0
+	module worklib.oai322d1:v
+		errors: 0, warnings: 0
+	module worklib.oai322d2:v
+		errors: 0, warnings: 0
+	module worklib.oai322d4:v
+		errors: 0, warnings: 0
+	module worklib.oaim211d1:v
+		errors: 0, warnings: 0
+	module worklib.oaim211d2:v
+		errors: 0, warnings: 0
+	module worklib.oaim211d4:v
+		errors: 0, warnings: 0
+	module worklib.oaim21d1:v
+		errors: 0, warnings: 0
+	module worklib.oaim21d2:v
+		errors: 0, warnings: 0
+	module worklib.oaim21d4:v
+		errors: 0, warnings: 0
+	module worklib.oaim22d1:v
+		errors: 0, warnings: 0
+	module worklib.oaim22d2:v
+		errors: 0, warnings: 0
+	module worklib.oaim22d4:v
+		errors: 0, warnings: 0
+	module worklib.oaim2m11d1:v
+		errors: 0, warnings: 0
+	module worklib.oaim2m11d2:v
+		errors: 0, warnings: 0
+	module worklib.oaim2m11d4:v
+		errors: 0, warnings: 0
+	module worklib.oaim311d1:v
+		errors: 0, warnings: 0
+	module worklib.oaim311d2:v
+		errors: 0, warnings: 0
+	module worklib.oaim311d4:v
+		errors: 0, warnings: 0
+	module worklib.oaim31d1:v
+		errors: 0, warnings: 0
+	module worklib.oaim31d2:v
+		errors: 0, warnings: 0
+	module worklib.oaim31d4:v
+		errors: 0, warnings: 0
+	module worklib.oaim3m11d1:v
+		errors: 0, warnings: 0
+	module worklib.oaim3m11d2:v
+		errors: 0, warnings: 0
+	module worklib.oaim3m11d4:v
+		errors: 0, warnings: 0
+	module worklib.oan211d1:v
+		errors: 0, warnings: 0
+	module worklib.oan211d2:v
+		errors: 0, warnings: 0
+	module worklib.oan211d4:v
+		errors: 0, warnings: 0
+	module worklib.or02d0:v
+		errors: 0, warnings: 0
+	module worklib.or02d1:v
+		errors: 0, warnings: 0
+	module worklib.or02d2:v
+		errors: 0, warnings: 0
+	module worklib.or02d4:v
+		errors: 0, warnings: 0
+	module worklib.or02d7:v
+		errors: 0, warnings: 0
+	module worklib.or02da:v
+		errors: 0, warnings: 0
+	module worklib.or03d0:v
+		errors: 0, warnings: 0
+	module worklib.or03d1:v
+		errors: 0, warnings: 0
+	module worklib.or03d2:v
+		errors: 0, warnings: 0
+	module worklib.or03d4:v
+		errors: 0, warnings: 0
+	module worklib.or03d7:v
+		errors: 0, warnings: 0
+	module worklib.or03da:v
+		errors: 0, warnings: 0
+	module worklib.or04d0:v
+		errors: 0, warnings: 0
+	module worklib.or04d1:v
+		errors: 0, warnings: 0
+	module worklib.or04d2:v
+		errors: 0, warnings: 0
+	module worklib.or04d4:v
+		errors: 0, warnings: 0
+	module worklib.or04d7:v
+		errors: 0, warnings: 0
+	module worklib.or04da:v
+		errors: 0, warnings: 0
+	module worklib.ora211d1:v
+		errors: 0, warnings: 0
+	module worklib.ora211d2:v
+		errors: 0, warnings: 0
+	module worklib.ora211d4:v
+		errors: 0, warnings: 0
+	module worklib.ora21d1:v
+		errors: 0, warnings: 0
+	module worklib.ora21d2:v
+		errors: 0, warnings: 0
+	module worklib.ora21d4:v
+		errors: 0, warnings: 0
+	module worklib.ora311d1:v
+		errors: 0, warnings: 0
+	module worklib.ora311d2:v
+		errors: 0, warnings: 0
+	module worklib.ora311d4:v
+		errors: 0, warnings: 0
+	module worklib.ora31d1:v
+		errors: 0, warnings: 0
+	module worklib.ora31d2:v
+		errors: 0, warnings: 0
+	module worklib.ora31d4:v
+		errors: 0, warnings: 0
+	module worklib.sdbfb1:v
+		errors: 0, warnings: 0
+	module worklib.sdbfb2:v
+		errors: 0, warnings: 0
+	module worklib.sdbfb4:v
+		errors: 0, warnings: 0
+	module worklib.sdbrb1:v
+		errors: 0, warnings: 0
+	module worklib.sdbrb2:v
+		errors: 0, warnings: 0
+	module worklib.sdbrb4:v
+		errors: 0, warnings: 0
+	module worklib.sdcfb1:v
+		errors: 0, warnings: 0
+	module worklib.sdcfb2:v
+		errors: 0, warnings: 0
+	module worklib.sdcfb4:v
+		errors: 0, warnings: 0
+	module worklib.sdcfq1:v
+		errors: 0, warnings: 0
+	module worklib.sdcfq2:v
+		errors: 0, warnings: 0
+	module worklib.sdcfq4:v
+		errors: 0, warnings: 0
+	module worklib.sdcrb1:v
+		errors: 0, warnings: 0
+	module worklib.sdcrb2:v
+		errors: 0, warnings: 0
+	module worklib.sdcrb4:v
+		errors: 0, warnings: 0
+	module worklib.sdcrn1:v
+		errors: 0, warnings: 0
+	module worklib.sdcrn2:v
+		errors: 0, warnings: 0
+	module worklib.sdcrn4:v
+		errors: 0, warnings: 0
+	module worklib.sdcrq1:v
+		errors: 0, warnings: 0
+	module worklib.sdcrq2:v
+		errors: 0, warnings: 0
+	module worklib.sdcrq4:v
+		errors: 0, warnings: 0
+	module worklib.sdnfb1:v
+		errors: 0, warnings: 0
+	module worklib.sdnfb2:v
+		errors: 0, warnings: 0
+	module worklib.sdnfb4:v
+		errors: 0, warnings: 0
+	module worklib.sdnrb1:v
+		errors: 0, warnings: 0
+	module worklib.sdnrb2:v
+		errors: 0, warnings: 0
+	module worklib.sdnrb4:v
+		errors: 0, warnings: 0
+	module worklib.sdnrn1:v
+		errors: 0, warnings: 0
+	module worklib.sdnrn2:v
+		errors: 0, warnings: 0
+	module worklib.sdnrn4:v
+		errors: 0, warnings: 0
+	module worklib.sdnrq1:v
+		errors: 0, warnings: 0
+	module worklib.sdnrq2:v
+		errors: 0, warnings: 0
+	module worklib.sdnrq4:v
+		errors: 0, warnings: 0
+	module worklib.sdpfb1:v
+		errors: 0, warnings: 0
+	module worklib.sdpfb2:v
+		errors: 0, warnings: 0
+	module worklib.sdpfb4:v
+		errors: 0, warnings: 0
+	module worklib.sdprb1:v
+		errors: 0, warnings: 0
+	module worklib.sdprb2:v
+		errors: 0, warnings: 0
+	module worklib.sdprb4:v
+		errors: 0, warnings: 0
+	module worklib.secfq1:v
+		errors: 0, warnings: 0
+	module worklib.secfq2:v
+		errors: 0, warnings: 0
+	module worklib.secfq4:v
+		errors: 0, warnings: 0
+	module worklib.secrq1:v
+		errors: 0, warnings: 0
+	module worklib.secrq2:v
+		errors: 0, warnings: 0
+	module worklib.secrq4:v
+		errors: 0, warnings: 0
+	module worklib.senrb1:v
+		errors: 0, warnings: 0
+	module worklib.senrb2:v
+		errors: 0, warnings: 0
+	module worklib.senrb4:v
+		errors: 0, warnings: 0
+	module worklib.senrq1:v
+		errors: 0, warnings: 0
+	module worklib.senrq2:v
+		errors: 0, warnings: 0
+	module worklib.senrq4:v
+		errors: 0, warnings: 0
+	module worklib.sepfq1:v
+		errors: 0, warnings: 0
+	module worklib.sepfq2:v
+		errors: 0, warnings: 0
+	module worklib.sepfq4:v
+		errors: 0, warnings: 0
+	module worklib.seprq1:v
+		errors: 0, warnings: 0
+	module worklib.seprq2:v
+		errors: 0, warnings: 0
+	module worklib.seprq4:v
+		errors: 0, warnings: 0
+	module worklib.skbrb1:v
+		errors: 0, warnings: 0
+	module worklib.skbrb2:v
+		errors: 0, warnings: 0
+	module worklib.skbrb4:v
+		errors: 0, warnings: 0
+	module worklib.slbhb1:v
+		errors: 0, warnings: 0
+	module worklib.slbhb2:v
+		errors: 0, warnings: 0
+	module worklib.slbhb4:v
+		errors: 0, warnings: 0
+	module worklib.slchq1:v
+		errors: 0, warnings: 0
+	module worklib.slchq2:v
+		errors: 0, warnings: 0
+	module worklib.slchq4:v
+		errors: 0, warnings: 0
+	module worklib.slclq1:v
+		errors: 0, warnings: 0
+	module worklib.slclq2:v
+		errors: 0, warnings: 0
+	module worklib.slclq4:v
+		errors: 0, warnings: 0
+	module worklib.slnhb1:v
+		errors: 0, warnings: 0
+	module worklib.slnhb2:v
+		errors: 0, warnings: 0
+	module worklib.slnhb4:v
+		errors: 0, warnings: 0
+	module worklib.slnhn1:v
+		errors: 0, warnings: 0
+	module worklib.slnhn2:v
+		errors: 0, warnings: 0
+	module worklib.slnhn4:v
+		errors: 0, warnings: 0
+	module worklib.slnhq1:v
+		errors: 0, warnings: 0
+	module worklib.slnhq2:v
+		errors: 0, warnings: 0
+	module worklib.slnhq4:v
+		errors: 0, warnings: 0
+	module worklib.slnht1:v
+		errors: 0, warnings: 0
+	module worklib.slnht2:v
+		errors: 0, warnings: 0
+	module worklib.slnht4:v
+		errors: 0, warnings: 0
+	module worklib.slnlb1:v
+		errors: 0, warnings: 0
+	module worklib.slnlb2:v
+		errors: 0, warnings: 0
+	module worklib.slnlb4:v
+		errors: 0, warnings: 0
+	module worklib.slnln1:v
+		errors: 0, warnings: 0
+	module worklib.slnln2:v
+		errors: 0, warnings: 0
+	module worklib.slnln4:v
+		errors: 0, warnings: 0
+	module worklib.slnlq1:v
+		errors: 0, warnings: 0
+	module worklib.slnlq2:v
+		errors: 0, warnings: 0
+	module worklib.slnlq4:v
+		errors: 0, warnings: 0
+	module worklib.srlab1:v
+		errors: 0, warnings: 0
+	module worklib.srlab2:v
+		errors: 0, warnings: 0
+	module worklib.srlab4:v
+		errors: 0, warnings: 0
+	module worklib.su01d0:v
+		errors: 0, warnings: 0
+	module worklib.su01d1:v
+		errors: 0, warnings: 0
+	module worklib.su01d2:v
+		errors: 0, warnings: 0
+	module worklib.su01d4:v
+		errors: 0, warnings: 0
+	module worklib.xn02d1:v
+		errors: 0, warnings: 0
+	module worklib.xn02d2:v
+		errors: 0, warnings: 0
+	module worklib.xn02d4:v
+		errors: 0, warnings: 0
+	module worklib.xn02d7:v
+		errors: 0, warnings: 0
+	module worklib.xn02da:v
+		errors: 0, warnings: 0
+	module worklib.xr02d1:v
+		errors: 0, warnings: 0
+	module worklib.xr02d2:v
+		errors: 0, warnings: 0
+	module worklib.xr02d4:v
+		errors: 0, warnings: 0
+	module worklib.xr02d7:v
+		errors: 0, warnings: 0
+	module worklib.xr02da:v
+		errors: 0, warnings: 0
+	module worklib.xr03d1:v
+		errors: 0, warnings: 0
+	module worklib.xr03d2:v
+		errors: 0, warnings: 0
+	module worklib.xr03d4:v
+		errors: 0, warnings: 0
+	module worklib.xr03d7:v
+		errors: 0, warnings: 0
+	module worklib.xr03da:v
+		errors: 0, warnings: 0
+file: /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3c01.v
+	module worklib.pc3c01:v
+		errors: 0, warnings: 0
+file: /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3d01.v
+	module worklib.pc3d01:v
+		errors: 0, warnings: 0
+file: /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3o05.v
+	module worklib.pc3o05:v
+		errors: 0, warnings: 0
+file: microprocessor_incremental.v
+	module worklib.branch:v
+		errors: 0, warnings: 0
+	module worklib.decode_pipe:v
+		errors: 0, warnings: 0
+	module worklib.control_decoder:v
+		errors: 0, warnings: 0
+	module worklib.type_decoder:v
+		errors: 0, warnings: 0
+	module worklib.controlunit:v
+		errors: 0, warnings: 0
+	module worklib.immediategen:v
+		errors: 0, warnings: 0
+	module worklib.mux:v
+		errors: 0, warnings: 0
+	module worklib.mux_469:v
+		errors: 0, warnings: 0
+	module worklib.registerfile:v
+		errors: 0, warnings: 0
+	module worklib.decode:v
+		errors: 0, warnings: 0
+	module worklib.execute_forwarding:v
+		errors: 0, warnings: 0
+	module worklib.execute_pipe:v
+		errors: 0, warnings: 0
+	module worklib.adder:v
+		errors: 0, warnings: 0
+	module worklib.alu:v
+		errors: 0, warnings: 0
+	module worklib.execute:v
+		errors: 0, warnings: 0
+	module worklib.fetch_pipe:v
+		errors: 0, warnings: 0
+	module worklib.pc:v
+		errors: 0, warnings: 0
+	module worklib.fetch:v
+		errors: 0, warnings: 0
+	module worklib.wrappermem:v
+		errors: 0, warnings: 0
+	module worklib.memory_stage:v
+		errors: 0, warnings: 0
+	module worklib.memory_pipe:v
+		errors: 0, warnings: 0
+	module worklib.mux2_4:v
+		errors: 0, warnings: 0
+	module worklib.write_back:v
+		errors: 0, warnings: 0
+	module worklib.core:v
+		errors: 0, warnings: 0
+	module worklib.data_memory:v
+		errors: 0, warnings: 0
+	module worklib.data_memory_top:v
+		errors: 0, warnings: 0
+	module worklib.instruction_memory_INIT_FILE8h00:v
+		errors: 0, warnings: 0
+	module worklib.instruc_mem_top_INIT_FILE8h00:v
+		errors: 0, warnings: 0
+	module worklib.microprocessor:v
+		errors: 0, warnings: 0
+file: micro_tb.sv
+	module worklib.micro_tb:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 28
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+irun: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+irun: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncelab: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+ncelab: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+ncelab: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncelab: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+ncelab: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+ncelab: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		ad01d0
+		ad01d1
+		ad01d2
+		ad01d4
+		adiode
+		adp1d0
+		adp1d1
+		adp1d2
+		adp1d4
+		ah01d0
+		ah01d2
+		ah01d4
+		an03d0
+		an03d2
+		an03d7
+		an03da
+		an04d0
+		an04d7
+		an04da
+		aoi211d2
+		aoi211d4
+		aoi21d2
+		aoi21d4
+		aoi221d2
+		aoi221d4
+		aoi2222d2
+		aoi2222d4
+		aoi222d4
+		aoi22d2
+		aoi22d4
+		aoi311d2
+		aoi311d4
+		aoi31d2
+		aoi321d2
+		aoi321d4
+		aoi322d2
+		aoi322d4
+		aoim211d1
+		aoim211d2
+		aoim211d4
+		aoim21d2
+		aoim21d4
+		aoim22d2
+		aoim22d4
+		aoim2m11d1
+		aoim2m11d2
+		aoim2m11d4
+		aoim311d1
+		aoim311d2
+		aoim311d4
+		aoim31d2
+		aoim31d4
+		aoim3m11d1
+		aoim3m11d2
+		aoim3m11d4
+		aon211d4
+		aor211d2
+		aor211d4
+		aor21d4
+		aor221d4
+		aor22d4
+		aor311d2
+		aor311d4
+		aor31d2
+		aor31d4
+		bh01d1
+		bufbda
+		bufbdf
+		bufbdk
+		buffd4
+		buftd1
+		buftd2
+		buftd4
+		buftd7
+		buftda
+		cg01d0
+		cg01d1
+		cg01d2
+		cg01d4
+		clk2d2
+		cload1
+		decfq1
+		decfq2
+		decfq4
+		decrq2
+		decrq4
+		denrq1
+		denrq2
+		denrq4
+		depfq1
+		depfq2
+		depfq4
+		deprq1
+		deprq2
+		deprq4
+		dfbfb1
+		dfbfb2
+		dfbfb4
+		dfbrb1
+		dfbrb2
+		dfbrb4
+		dfcfb1
+		dfcfb2
+		dfcfb4
+		dfcfq1
+		dfcfq2
+		dfcfq4
+		dfcrb2
+		dfcrb4
+		dfcrn1
+		dfcrn2
+		dfcrn4
+		dfnfb1
+		dfnfb2
+		dfnfb4
+		dfnrb1
+		dfnrb2
+		dfnrb4
+		dfnrn1
+		dfnrn2
+		dfnrn4
+		dfpfb1
+		dfpfb2
+		dfpfb4
+		dfprb2
+		dfprb4
+		dl01d1
+		dl01d2
+		dl01d4
+		dl02d1
+		dl02d2
+		dl02d4
+		dl03d1
+		dl03d2
+		dl03d4
+		dl04d1
+		dl04d2
+		dl04d4
+		gclfsn1
+		gclfsn2
+		gclfsn4
+		gclfsn7
+		gclfsna
+		gclrsn1
+		gclrsn2
+		gclrsn4
+		gclrsn7
+		gclrsna
+		gcnfnn1
+		gcnfnn2
+		gcnfnn4
+		gcnfnn7
+		gcnfnna
+		gcnrnn1
+		gcnrnn2
+		gcnrnn4
+		gcnrnn7
+		gcnrnna
+		invbdk
+		invtd1
+		invtd2
+		invtd4
+		invtd7
+		invtda
+		jkbrb1
+		jkbrb2
+		jkbrb4
+		labhb1
+		labhb2
+		labhb4
+		lachq1
+		lachq2
+		lachq4
+		laclq1
+		laclq2
+		laclq4
+		lanhb1
+		lanhb2
+		lanhb4
+		lanhn1
+		lanhn2
+		lanhn4
+		lanhq1
+		lanhq2
+		lanhq4
+		lanht1
+		lanht2
+		lanht4
+		lanlb1
+		lanlb2
+		lanlb4
+		lanln1
+		lanln2
+		lanln4
+		lanlq1
+		lanlq2
+		lanlq4
+		mffnrb1
+		mffnrb2
+		mffnrb4
+		mi02d0
+		mi02d2
+		mi02d4
+		mx02d0
+		mx02d4
+		mx04d0
+		mx04d1
+		mx04d2
+		mx04d4
+		mx08d1
+		mx08d2
+		mx08d4
+		nd03d0
+		nd03d4
+		nd03d7
+		nd03da
+		nd04d0
+		nd04d7
+		nd04da
+		nd12d0
+		nd23d2
+		nd23d4
+		nr02d0
+		nr02d4
+		nr02da
+		nr03d0
+		nr03d2
+		nr03d4
+		nr03d7
+		nr03da
+		nr04d0
+		nr04d2
+		nr04d4
+		nr04da
+		nr13d4
+		nr23d4
+		oai211d2
+		oai211d4
+		oai221d2
+		oai221d4
+		oai2222d1
+		oai2222d2
+		oai2222d4
+		oai222d2
+		oai222d4
+		oai22d2
+		oai22d4
+		oai311d2
+		oai311d4
+		oai31d2
+		oai31d4
+		oai321d2
+		oai321d4
+		oai322d2
+		oai322d4
+		oaim211d2
+		oaim211d4
+		oaim21d2
+		oaim21d4
+		oaim22d2
+		oaim22d4
+		oaim2m11d2
+		oaim2m11d4
+		oaim311d2
+		oaim311d4
+		oaim31d2
+		oaim31d4
+		oaim3m11d1
+		oaim3m11d2
+		oaim3m11d4
+		oan211d2
+		oan211d4
+		or02da
+		or03d0
+		or03d1
+		or03d2
+		or03d4
+		or03da
+		or04d0
+		or04d2
+		or04d4
+		or04d7
+		or04da
+		ora211d2
+		ora211d4
+		ora21d2
+		ora21d4
+		ora311d1
+		ora311d2
+		ora311d4
+		ora31d2
+		ora31d4
+		sdbfb1
+		sdbfb2
+		sdbfb4
+		sdbrb1
+		sdbrb2
+		sdbrb4
+		sdcfb1
+		sdcfb2
+		sdcfb4
+		sdcfq1
+		sdcfq2
+		sdcfq4
+		sdcrb1
+		sdcrb2
+		sdcrb4
+		sdcrn1
+		sdcrn2
+		sdcrq1
+		sdcrq2
+		sdcrq4
+		sdnfb1
+		sdnfb2
+		sdnfb4
+		sdnrb1
+		sdnrb2
+		sdnrb4
+		sdnrn1
+		sdnrn2
+		sdnrn4
+		sdnrq1
+		sdnrq2
+		sdnrq4
+		sdpfb1
+		sdpfb2
+		sdpfb4
+		sdprb1
+		sdprb2
+		sdprb4
+		secfq1
+		secfq2
+		secfq4
+		secrq1
+		secrq2
+		secrq4
+		senrb1
+		senrb2
+		senrb4
+		senrq1
+		senrq2
+		senrq4
+		sepfq1
+		sepfq2
+		sepfq4
+		seprq1
+		seprq2
+		seprq4
+		skbrb1
+		skbrb2
+		skbrb4
+		slbhb1
+		slbhb2
+		slbhb4
+		slchq1
+		slchq2
+		slchq4
+		slclq1
+		slclq2
+		slclq4
+		slnhb1
+		slnhb2
+		slnhb4
+		slnhn1
+		slnhn2
+		slnhn4
+		slnhq1
+		slnhq2
+		slnhq4
+		slnht1
+		slnht2
+		slnht4
+		slnlb1
+		slnlb2
+		slnlb4
+		slnln1
+		slnln2
+		slnln4
+		slnlq1
+		slnlq2
+		slnlq4
+		srlab1
+		srlab2
+		srlab4
+		su01d0
+		su01d1
+		su01d2
+		su01d4
+		xn02d2
+		xn02d4
+		xn02d7
+		xn02da
+		xr02d2
+		xr02d4
+		xr02d7
+		xr02da
+		xr03d2
+		xr03d4
+		xr03d7
+		xr03da
+		pc3c01
+		pc3d01
+		pc3o05
+		micro_tb
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncelab: *W,FLFFNF: Compiled SDF file (srff_pad.sdf) not found, specified in SDF annotation command file sdf.cmd, line 4.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncvlog_cg: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+ncvlog_cg: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+ncvlog_cg: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncvlog_cg: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+ncvlog_cg: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+ncvlog_cg: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+		worklib.ad01d0:v <0x2e3c9d35>
+			streams:   0, words:     0
+		worklib.ad01d1:v <0x415dd60e>
+			streams:   0, words:     0
+		worklib.ad01d2:v <0x79a4dcb4>
+			streams:   0, words:     0
+		worklib.ad01d4:v <0x62c17f13>
+			streams:   0, words:     0
+		worklib.adder:v <0x7390948b>
+			streams:   0, words:     0
+		worklib.adp1d0:v <0x6453402a>
+			streams:   1, words:   385
+		worklib.adp1d1:v <0x7f00052b>
+			streams:   1, words:   385
+		worklib.adp1d2:v <0x63137aba>
+			streams:   1, words:   385
+		worklib.adp1d4:v <0x091e542e>
+			streams:   1, words:   385
+		worklib.ah01d0:v <0x6c1e1b0c>
+			streams:   0, words:     0
+		worklib.ah01d1:v <0x0b4aab78>
+			streams:   0, words:     0
+		worklib.ah01d2:v <0x48a8208b>
+			streams:   0, words:     0
+		worklib.ah01d4:v <0x7e036a43>
+			streams:   0, words:     0
+		worklib.aoim211d1:v <0x37d973fd>
+			streams:   0, words:     0
+		worklib.aoim211d2:v <0x0c18eb05>
+			streams:   0, words:     0
+		worklib.aoim211d4:v <0x20eadcb4>
+			streams:   0, words:     0
+		worklib.aoim21d1:v <0x15cb2ecf>
+			streams:   0, words:     0
+		worklib.aoim21d2:v <0x288fa4f5>
+			streams:   0, words:     0
+		worklib.aoim21d4:v <0x4b7c5471>
+			streams:   0, words:     0
+		worklib.aoim22d1:v <0x469d6a8e>
+			streams:   0, words:     0
+		worklib.aoim22d2:v <0x2688e0e8>
+			streams:   0, words:     0
+		worklib.aoim22d4:v <0x0a7ad759>
+			streams:   0, words:     0
+		worklib.aoim2m11d1:v <0x2f2bb53c>
+			streams:   0, words:     0
+		worklib.aoim2m11d2:v <0x14ea2dc4>
+			streams:   0, words:     0
+		worklib.aoim2m11d4:v <0x38181a75>
+			streams:   0, words:     0
+		worklib.aoim311d1:v <0x442c0052>
+			streams:   0, words:     0
+		worklib.aoim311d2:v <0x545e62b4>
+			streams:   0, words:     0
+		worklib.aoim311d4:v <0x74baa778>
+			streams:   0, words:     0
+		worklib.aoim31d1:v <0x65e3034f>
+			streams:   0, words:     0
+		worklib.aoim31d2:v <0x5e229bb7>
+			streams:   0, words:     0
+		worklib.aoim31d4:v <0x72d0ac06>
+			streams:   0, words:     0
+		worklib.aoim3m11d1:v <0x06ff1cf5>
+			streams:   0, words:     0
+		worklib.aoim3m11d2:v <0x168d7e13>
+			streams:   0, words:     0
+		worklib.aoim3m11d4:v <0x3669bbdf>
+			streams:   0, words:     0
+		worklib.control_decoder:v <0x48d21759>
+			streams:   0, words:     0
+		worklib.controlunit:v <0x7bd865b1>
+			streams:   0, words:     0
+		worklib.core:v <0x6e2e7271>
+			streams:   0, words:     0
+		worklib.data_memory:v <0x5925a1ee>
+			streams:   1, words: 261003
+		worklib.decfq1:v <0x7e88bdbb>
+			streams:   0, words:     0
+		worklib.decfq2:v <0x54735194>
+			streams:   0, words:     0
+		worklib.decfq4:v <0x30623958>
+			streams:   0, words:     0
+		worklib.decode:v <0x78cddc84>
+			streams:   0, words:     0
+		worklib.decode_pipe:v <0x7a5bda78>
+			streams:   1, words:   139
+		worklib.decrq1:v <0x06b5b41b>
+			streams:   0, words:     0
+		worklib.decrq1:v <0x1a79353a>
+			streams:   0, words:     0
+		worklib.decrq2:v <0x0a305dac>
+			streams:   0, words:     0
+		worklib.decrq4:v <0x6e213560>
+			streams:   0, words:     0
+		worklib.denrq1:v <0x2e8c23cd>
+			streams:   0, words:     0
+		worklib.denrq2:v <0x01007b4f>
+			streams:   0, words:     0
+		worklib.denrq4:v <0x3dd5ab6f>
+			streams:   0, words:     0
+		worklib.depfq1:v <0x3244507d>
+			streams:   0, words:     0
+		worklib.depfq2:v <0x18bfbc52>
+			streams:   0, words:     0
+		worklib.depfq4:v <0x7caed49e>
+			streams:   0, words:     0
+		worklib.deprq1:v <0x6c075c45>
+			streams:   0, words:     0
+		worklib.deprq2:v <0x46fcb06a>
+			streams:   0, words:     0
+		worklib.deprq4:v <0x22edd8a6>
+			streams:   0, words:     0
+		worklib.dfbfb1:v <0x67838a64>
+			streams:   0, words:     0
+		worklib.dfbfb2:v <0x5266ed69>
+			streams:   0, words:     0
+		worklib.dfbfb4:v <0x5a614257>
+			streams:   0, words:     0
+		worklib.dfbrb1:v <0x70514788>
+			streams:   0, words:     0
+		worklib.dfbrb2:v <0x12401794>
+			streams:   0, words:     0
+		worklib.dfbrb4:v <0x6eded0c9>
+			streams:   0, words:     0
+		worklib.dfcfb1:v <0x4980ee1c>
+			streams:   0, words:     0
+		worklib.dfcfb2:v <0x499fa6cc>
+			streams:   0, words:     0
+		worklib.dfcfb4:v <0x2a6c5648>
+			streams:   0, words:     0
+		worklib.dfcfq1:v <0x1b971692>
+			streams:   0, words:     0
+		worklib.dfcfq2:v <0x0f628351>
+			streams:   0, words:     0
+		worklib.dfcfq4:v <0x4c1e1e04>
+			streams:   0, words:     0
+		worklib.dfcrb1:v <0x54a68df5>
+			streams:   0, words:     0
+		worklib.dfcrb2:v <0x69e207cf>
+			streams:   0, words:     0
+		worklib.dfcrb4:v <0x0a11f74b>
+			streams:   0, words:     0
+		worklib.dfcrn1:v <0x2ca93d83>
+			streams:   0, words:     0
+		worklib.dfcrn2:v <0x77eb9891>
+			streams:   0, words:     0
+		worklib.dfcrn4:v <0x416ed2b5>
+			streams:   0, words:     0
+		worklib.dfcrq1:v <0x7a0e79b1>
+			streams:   0, words:     0
+		worklib.dfcrq1:v <0x7d8265d0>
+			streams:   0, words:     0
+		worklib.dfcrq2:v <0x6efbec72>
+			streams:   0, words:     0
+		worklib.dfcrq4:v <0x2a0b6d46>
+			streams:   0, words:     0
+		worklib.dfcrq4:v <0x2d877127>
+			streams:   0, words:     0
+		worklib.dfnfb1:v <0x770a7104>
+			streams:   0, words:     0
+		worklib.dfnfb2:v <0x2c48d416>
+			streams:   0, words:     0
+		worklib.dfnfb4:v <0x1acd9e32>
+			streams:   0, words:     0
+		worklib.dfnrb1:v <0x7c3f76ab>
+			streams:   0, words:     0
+		worklib.dfnrb2:v <0x277dd3b9>
+			streams:   0, words:     0
+		worklib.dfnrb4:v <0x11f8999d>
+			streams:   0, words:     0
+		worklib.dfnrn1:v <0x7dff9190>
+			streams:   0, words:     0
+		worklib.dfnrn2:v <0x690a0453>
+			streams:   0, words:     0
+		worklib.dfnrn4:v <0x2a769906>
+			streams:   0, words:     0
+		worklib.dfnrq1:v <0x4d17b516>
+			streams:   0, words:     0
+		worklib.dfnrq2:v <0x3f459b3d>
+			streams:   0, words:     0
+		worklib.dfnrq4:v <0x0090c12a>
+			streams:   0, words:     0
+		worklib.dfpfb1:v <0x16bbe692>
+			streams:   0, words:     0
+		worklib.dfpfb2:v <0x16a4ae42>
+			streams:   0, words:     0
+		worklib.dfpfb4:v <0x75575ec6>
+			streams:   0, words:     0
+		worklib.dfprb1:v <0x0b9d857b>
+			streams:   0, words:     0
+		worklib.dfprb1:v <0x49d6d751>
+			streams:   0, words:     0
+		worklib.dfprb2:v <0x36d90f41>
+			streams:   0, words:     0
+		worklib.dfprb4:v <0x552affc5>
+			streams:   0, words:     0
+		worklib.execute:v <0x614c3128>
+			streams:   0, words:     0
+		worklib.execute_forwarding:v <0x3ec9159d>
+			streams:   0, words:     0
+		worklib.fetch:v <0x23177d54>
+			streams:   0, words:     0
+		worklib.gclfsn1:v <0x60deb772>
+			streams:   0, words:     0
+		worklib.gclfsn2:v <0x3a0867af>
+			streams:   0, words:     0
+		worklib.gclfsn4:v <0x54d4c054>
+			streams:   0, words:     0
+		worklib.gclfsn7:v <0x0e021089>
+			streams:   0, words:     0
+		worklib.gclfsna:v <0x7ba6e4dd>
+			streams:   0, words:     0
+		worklib.gclrsn1:v <0x48bb7e6f>
+			streams:   0, words:     0
+		worklib.gclrsn2:v <0x5a4e16a6>
+			streams:   0, words:     0
+		worklib.gclrsn4:v <0x24d5c175>
+			streams:   0, words:     0
+		worklib.gclrsn7:v <0x3620a9bc>
+			streams:   0, words:     0
+		worklib.gclrsna:v <0x38e5908a>
+			streams:   0, words:     0
+		worklib.gcnfnn1:v <0x681df94b>
+			streams:   1, words:   494
+		worklib.gcnfnn2:v <0x335f5c59>
+			streams:   1, words:   494
+		worklib.gcnfnn4:v <0x05da167d>
+			streams:   1, words:   494
+		worklib.gcnfnn7:v <0x5e98b36f>
+			streams:   1, words:   494
+		worklib.gcnfnna:v <0x5e0d88b1>
+			streams:   1, words:   494
+		worklib.gcnrnn1:v <0x1f19c2a7>
+			streams:   1, words:   508
+		worklib.gcnrnn2:v <0x445b67b5>
+			streams:   1, words:   508
+		worklib.gcnrnn4:v <0x72de2d91>
+			streams:   1, words:   508
+		worklib.gcnrnn7:v <0x299c8883>
+			streams:   1, words:   508
+		worklib.gcnrnna:v <0x2909b35d>
+			streams:   1, words:   508
+		worklib.instruc_mem_top_INIT_FILE8h00:v <0x4d757fce>
+			streams:   0, words:     0
+		worklib.instruction_memory_INIT_FILE8h00:v <0x219c76c9>
+			streams:   0, words:     0
+		worklib.jkbrb1:v <0x06ac9274>
+			streams:   0, words:     0
+		worklib.jkbrb2:v <0x46ac77fa>
+			streams:   0, words:     0
+		worklib.jkbrb4:v <0x14866d50>
+			streams:   0, words:     0
+		worklib.labhb1:v <0x1051a180>
+			streams:   0, words:     0
+		worklib.labhb2:v <0x25b4c68d>
+			streams:   0, words:     0
+		worklib.labhb4:v <0x2db369b3>
+			streams:   0, words:     0
+		worklib.lachq1:v <0x4537485f>
+			streams:   0, words:     0
+		worklib.lachq2:v <0x5cd1e8f8>
+			streams:   0, words:     0
+		worklib.lachq4:v <0x3d377800>
+			streams:   0, words:     0
+		worklib.laclq1:v <0x7a85ebfc>
+			streams:   0, words:     0
+		worklib.laclq2:v <0x5cdb74de>
+			streams:   0, words:     0
+		worklib.laclq4:v <0x2180fa08>
+			streams:   0, words:     0
+		worklib.lanhb1:v <0x4f095b36>
+			streams:   0, words:     0
+		worklib.lanhb2:v <0x15df8beb>
+			streams:   0, words:     0
+		worklib.lanhb4:v <0x7b032c10>
+			streams:   0, words:     0
+		worklib.lanhn1:v <0x2d719eb3>
+			streams:   0, words:     0
+		worklib.lanhn2:v <0x34973e14>
+			streams:   0, words:     0
+		worklib.lanhn4:v <0x5571aeec>
+			streams:   0, words:     0
+		worklib.lanhq1:v <0x6842ec45>
+			streams:   0, words:     0
+		worklib.lanhq2:v <0x1188cad7>
+			streams:   0, words:     0
+		worklib.lanhq4:v <0x01d1e6d7>
+			streams:   0, words:     0
+		worklib.lanht1:v <0x6ae4e727>
+			streams:   0, words:     0
+		worklib.lanht2:v <0x682bf5f1>
+			streams:   0, words:     0
+		worklib.lanht4:v <0x3f9e01eb>
+			streams:   0, words:     0
+		worklib.lanlb1:v <0x2c8a19b7>
+			streams:   0, words:     0
+		worklib.lanlb2:v <0x765cc96a>
+			streams:   0, words:     0
+		worklib.lanlb4:v <0x18806e91>
+			streams:   0, words:     0
+		worklib.lanln1:v <0x5c09c1ca>
+			streams:   0, words:     0
+		worklib.lanln2:v <0x45ef616d>
+			streams:   0, words:     0
+		worklib.lanln4:v <0x2409f195>
+			streams:   0, words:     0
+		worklib.lanlq1:v <0x4b2dbb69>
+			streams:   0, words:     0
+		worklib.lanlq2:v <0x32e79dfb>
+			streams:   0, words:     0
+		worklib.lanlq4:v <0x22beb1fb>
+			streams:   0, words:     0
+		worklib.mffnrb1:v <0x01dd8957>
+			streams:   0, words:     0
+		worklib.mffnrb2:v <0x7587ee5b>
+			streams:   0, words:     0
+		worklib.mffnrb4:v <0x2cd590d1>
+			streams:   0, words:     0
+		worklib.mi02d0:v <0x75e27579>
+			streams:   0, words:     0
+		worklib.mi02d1:v <0x170eb95e>
+			streams:   0, words:     0
+		worklib.mi02d2:v <0x221b83a0>
+			streams:   0, words:     0
+		worklib.mi02d4:v <0x39dcf9ef>
+			streams:   0, words:     0
+		worklib.micro_tb:sv <0x68c19e64>
+			streams:   6, words:  5442
+		worklib.microprocessor:v <0x27152782>
+			streams:   0, words:     0
+		worklib.mx02d0:v <0x51422b2c>
+			streams:   0, words:     0
+		worklib.mx02d1:v <0x33aee70b>
+			streams:   0, words:     0
+		worklib.mx02d1:v <0x54c3b927>
+			streams:   0, words:     0
+		worklib.mx02d2:v <0x3ae031d7>
+			streams:   0, words:     0
+		worklib.mx02d4:v <0x1d7ca7ba>
+			streams:   0, words:     0
+		worklib.mx04d0:v <0x154a87a4>
+			streams:   0, words:     0
+		worklib.mx04d1:v <0x71b2d803>
+			streams:   0, words:     0
+		worklib.mx04d2:v <0x55e0ef1d>
+			streams:   0, words:     0
+		worklib.mx04d4:v <0x77d337f2>
+			streams:   0, words:     0
+		worklib.oaim211d1:v <0x1983b3cb>
+			streams:   0, words:     0
+		worklib.oaim211d1:v <0x2a800fc1>
+			streams:   0, words:     0
+		worklib.oaim211d2:v <0x4a9585a7>
+			streams:   0, words:     0
+		worklib.oaim211d4:v <0x6667b216>
+			streams:   0, words:     0
+		worklib.oaim21d1:v <0x188b2a50>
+			streams:   0, words:     0
+		worklib.oaim21d1:v <0x2b88965a>
+			streams:   0, words:     0
+		worklib.oaim21d2:v <0x25cfa06a>
+			streams:   0, words:     0
+		worklib.oaim21d4:v <0x463c50ee>
+			streams:   0, words:     0
+		worklib.oaim22d1:v <0x472a7ab4>
+			streams:   0, words:     0
+		worklib.oaim22d1:v <0x7429c6be>
+			streams:   0, words:     0
+		worklib.oaim22d2:v <0x273ff0d2>
+			streams:   0, words:     0
+		worklib.oaim22d4:v <0x0bcdc763>
+			streams:   0, words:     0
+		worklib.oaim2m11d1:v <0x7d07589a>
+			streams:   0, words:     0
+		worklib.oaim2m11d2:v <0x1d12d2fc>
+			streams:   0, words:     0
+		worklib.oaim2m11d4:v <0x31e0e54d>
+			streams:   0, words:     0
+		worklib.oaim311d1:v <0x788a16b0>
+			streams:   0, words:     0
+		worklib.oaim311d2:v <0x68f87456>
+			streams:   0, words:     0
+		worklib.oaim311d4:v <0x481cb19a>
+			streams:   0, words:     0
+		worklib.oaim31d1:v <0x3f8001eb>
+			streams:   0, words:     0
+		worklib.oaim31d2:v <0x5f958b8d>
+			streams:   0, words:     0
+		worklib.oaim31d4:v <0x7367bc3c>
+			streams:   0, words:     0
+		worklib.oaim3m11d1:v <0x67119dfd>
+			streams:   0, words:     0
+		worklib.oaim3m11d2:v <0x7763ff1b>
+			streams:   0, words:     0
+		worklib.oaim3m11d4:v <0x57873ad7>
+			streams:   0, words:     0
+		worklib.pc:v <0x5c00c938>
+			streams:   0, words:     0
+		worklib.s_mx08d1:v <0x68a3f125>
+			streams:   1, words:  3459
+		worklib.s_mx08d2:v <0x42581d0a>
+			streams:   1, words:  3459
+		worklib.s_mx08d4:v <0x264975c6>
+			streams:   1, words:  3459
+		worklib.sdbfb1:v <0x23901ff7>
+			streams:   0, words:     0
+		worklib.sdbfb2:v <0x42ea7365>
+			streams:   0, words:     0
+		worklib.sdbfb4:v <0x5b6fac00>
+			streams:   0, words:     0
+		worklib.sdbrb1:v <0x1304bf6b>
+			streams:   0, words:     0
+		worklib.sdbrb2:v <0x53045ae5>
+			streams:   0, words:     0
+		worklib.sdbrb4:v <0x012e404f>
+			streams:   0, words:     0
+		worklib.sdcfb1:v <0x63d12398>
+			streams:   0, words:     0
+		worklib.sdcfb2:v <0x327476b6>
+			streams:   0, words:     0
+		worklib.sdcfb4:v <0x18640b1d>
+			streams:   0, words:     0
+		worklib.sdcfq1:v <0x01a494b8>
+			streams:   0, words:     0
+		worklib.sdcfq2:v <0x11d6f65e>
+			streams:   0, words:     0
+		worklib.sdcfq4:v <0x31323392>
+			streams:   0, words:     0
+		worklib.sdcrb1:v <0x4442684f>
+			streams:   0, words:     0
+		worklib.sdcrb2:v <0x15e73d61>
+			streams:   0, words:     0
+		worklib.sdcrb4:v <0x3ff740ca>
+			streams:   0, words:     0
+		worklib.sdcrn1:v <0x3a39aeff>
+			streams:   0, words:     0
+		worklib.sdcrn2:v <0x59aa8228>
+			streams:   0, words:     0
+		worklib.sdcrn4:v <0x400009b5>
+			streams:   0, words:     0
+		worklib.sdcrn4:v <0x4a2ad16c>
+			streams:   0, words:     0
+		worklib.sdcrq1:v <0x1ec3bf6c>
+			streams:   0, words:     0
+		worklib.sdcrq2:v <0x0eb1dd8a>
+			streams:   0, words:     0
+		worklib.sdcrq4:v <0x2e551846>
+			streams:   0, words:     0
+		worklib.sdnfb1:v <0x7102e6cb>
+			streams:   0, words:     0
+		worklib.sdnfb2:v <0x63f78e02>
+			streams:   0, words:     0
+		worklib.sdnfb4:v <0x1d6c59d1>
+			streams:   0, words:     0
+		worklib.sdnrb1:v <0x682c08e9>
+			streams:   0, words:     0
+		worklib.sdnrb2:v <0x7ad96020>
+			streams:   0, words:     0
+		worklib.sdnrb4:v <0x0442b7f3>
+			streams:   0, words:     0
+		worklib.sdnrn1:v <0x7123b0c2>
+			streams:   0, words:     0
+		worklib.sdnrn2:v <0x2bf5601f>
+			streams:   0, words:     0
+		worklib.sdnrn4:v <0x4529c7e4>
+			streams:   0, words:     0
+		worklib.sdnrq1:v <0x324f8e78>
+			streams:   0, words:     0
+		worklib.sdnrq2:v <0x690d2b6a>
+			streams:   0, words:     0
+		worklib.sdnrq4:v <0x5f88614e>
+			streams:   0, words:     0
+		worklib.sdpfb1:v <0x6436335f>
+			streams:   0, words:     0
+		worklib.sdpfb2:v <0x35936671>
+			streams:   0, words:     0
+		worklib.sdpfb4:v <0x1f831bda>
+			streams:   0, words:     0
+		worklib.sdprb1:v <0x43a57888>
+			streams:   0, words:     0
+		worklib.sdprb2:v <0x12002da6>
+			streams:   0, words:     0
+		worklib.sdprb4:v <0x3810500d>
+			streams:   0, words:     0
+		worklib.secfq1:v <0x3f746724>
+			streams:   0, words:     0
+		worklib.secfq2:v <0x66aff17e>
+			streams:   0, words:     0
+		worklib.secfq4:v <0x07330c7c>
+			streams:   0, words:     0
+		worklib.secrq1:v <0x0c53dc51>
+			streams:   0, words:     0
+		worklib.secrq2:v <0x6e428c4d>
+			streams:   0, words:     0
+		worklib.secrq4:v <0x12dc4b10>
+			streams:   0, words:     0
+		worklib.senrb1:v <0x3f2bd626>
+			streams:   0, words:     0
+		worklib.senrb2:v <0x4b71b12a>
+			streams:   0, words:     0
+		worklib.senrb4:v <0x1223cfa0>
+			streams:   0, words:     0
+		worklib.senrq1:v <0x4fb5fc60>
+			streams:   0, words:     0
+		worklib.senrq2:v <0x75fe20e4>
+			streams:   0, words:     0
+		worklib.senrq4:v <0x016999ec>
+			streams:   0, words:     0
+		worklib.sepfq1:v <0x04e1e9b1>
+			streams:   0, words:     0
+		worklib.sepfq2:v <0x5d3a7feb>
+			streams:   0, words:     0
+		worklib.sepfq4:v <0x3ca682e9>
+			streams:   0, words:     0
+		worklib.seprq1:v <0x50eb3592>
+			streams:   0, words:     0
+		worklib.seprq2:v <0x32fa658e>
+			streams:   0, words:     0
+		worklib.seprq4:v <0x4e64a2d3>
+			streams:   0, words:     0
+		worklib.skbrb1:v <0x4e01b9e0>
+			streams:   0, words:     0
+		worklib.skbrb2:v <0x6df9161d>
+			streams:   0, words:     0
+		worklib.skbrb4:v <0x23529e10>
+			streams:   0, words:     0
+		worklib.slbhb1:v <0x3c757ad2>
+			streams:   0, words:     0
+		worklib.slbhb2:v <0x78b8a2ee>
+			streams:   0, words:     0
+		worklib.slbhb4:v <0x5a8f89b7>
+			streams:   0, words:     0
+		worklib.slchq1:v <0x2a3e9938>
+			streams:   0, words:     0
+		worklib.slchq2:v <0x6a01dcef>
+			streams:   0, words:     0
+		worklib.slchq4:v <0x09b23665>
+			streams:   0, words:     0
+		worklib.slclq1:v <0x370d4638>
+			streams:   0, words:     0
+		worklib.slclq2:v <0x00661bfe>
+			streams:   0, words:     0
+		worklib.slclq4:v <0x715505ea>
+			streams:   0, words:     0
+		worklib.slnhb1:v <0x68292a96>
+			streams:   0, words:     0
+		worklib.slnhb2:v <0x298c6f0b>
+			streams:   0, words:     0
+		worklib.slnhb4:v <0x1b2054a3>
+			streams:   0, words:     0
+		worklib.slnhn1:v <0x35f87198>
+			streams:   0, words:     0
+		worklib.slnhn2:v <0x258a137e>
+			streams:   0, words:     0
+		worklib.slnhn4:v <0x056ed6b2>
+			streams:   0, words:     0
+		worklib.slnhq1:v <0x6ba30e47>
+			streams:   0, words:     0
+		worklib.slnhq2:v <0x696c1c91>
+			streams:   0, words:     0
+		worklib.slnhq4:v <0x3ed9e88b>
+			streams:   0, words:     0
+		worklib.slnht1:v <0x53320988>
+			streams:   0, words:     0
+		worklib.slnht2:v <0x2fde7aaa>
+			streams:   0, words:     0
+		worklib.slnht4:v <0x042d4d58>
+			streams:   0, words:     0
+		worklib.slnlb1:v <0x334d9f16>
+			streams:   0, words:     0
+		worklib.slnlb2:v <0x72e8da8b>
+			streams:   0, words:     0
+		worklib.slnlb4:v <0x4044e123>
+			streams:   0, words:     0
+		worklib.slnln1:v <0x454f37db>
+			streams:   0, words:     0
+		worklib.slnln2:v <0x553d553d>
+			streams:   0, words:     0
+		worklib.slnln4:v <0x75d990f1>
+			streams:   0, words:     0
+		worklib.slnlq1:v <0x1027e204>
+			streams:   0, words:     0
+		worklib.slnlq2:v <0x12e8f0d2>
+			streams:   0, words:     0
+		worklib.slnlq4:v <0x455d04c8>
+			streams:   0, words:     0
+		worklib.srlab1:v <0x45da4385>
+			streams:   0, words:     0
+		worklib.srlab2:v <0x1f0c9358>
+			streams:   0, words:     0
+		worklib.srlab4:v <0x71d034a3>
+			streams:   0, words:     0
+		worklib.su01d0:v <0x105e356b>
+			streams:   0, words:     0
+		worklib.su01d1:v <0x7f3f7e50>
+			streams:   0, words:     0
+		worklib.su01d2:v <0x47c674ea>
+			streams:   0, words:     0
+		worklib.su01d4:v <0x5ca3d74d>
+			streams:   0, words:     0
+		worklib.write_back:v <0x570e5883>
+			streams:   0, words:     0
+		worklib.xn02d1:v <0x1a0e9029>
+			streams:   0, words:     0
+		worklib.xn02d2:v <0x4626c893>
+			streams:   0, words:     0
+		worklib.xn02d4:v <0x74d28aad>
+			streams:   0, words:     0
+		worklib.xn02d7:v <0x44bd4369>
+			streams:   0, words:     0
+		worklib.xn02da:v <0x6e170e65>
+			streams:   0, words:     0
+		worklib.xr02d1:v <0x66496521>
+			streams:   0, words:     0
+		worklib.xr02d1:v <0x7d1912a7>
+			streams:   0, words:     0
+		worklib.xr02d2:v <0x3a613d9b>
+			streams:   0, words:     0
+		worklib.xr02d4:v <0x08957fa5>
+			streams:   0, words:     0
+		worklib.xr02d7:v <0x38fab661>
+			streams:   0, words:     0
+		worklib.xr02da:v <0x1250fb6d>
+			streams:   0, words:     0
+		worklib.xr03d1:v <0x07e04e91>
+			streams:   0, words:     0
+		worklib.xr03d2:v <0x7bf9fdb5>
+			streams:   0, words:     0
+		worklib.xr03d4:v <0x03ca9bfd>
+			streams:   0, words:     0
+		worklib.xr03d7:v <0x7fd328d9>
+			streams:   0, words:     0
+		worklib.xr03da:v <0x1996858e>
+			streams:   0, words:     0
+	Building instance specific data structures.
+        1   (1x)    0   x         ?          :   0   :   0;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21254|8): UDP table entry is redundant.
+        0   (1x)    x   0         ?          :   1   :   1;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21255|8): UDP table entry is redundant.
+        1   (1x)    1   x      ?        :   1   :   1;  // reducing pessimism
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21310|8): UDP table entry is redundant.
+        0   (1x)    x   1      ?        :   0   :   0;                          
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21311|8): UDP table entry is redundant.
+        1   (?x)    1   x         ?          :   1   :   1;  // ignore falling clock
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21636|8): UDP table entry is redundant.
+        0   (?x)    x   1         ?          :   0   :   0;  // ignore falling clock
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21637|8): UDP table entry is redundant.
+        0   (1x)    x         ?          :   0   :   0;                          
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21125|8): UDP table entry is redundant.
+        0   (0x)    x         ?          :   0   :   0;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21517|8): UDP table entry is redundant.
+        1   (1x)    x         ?          :   1   :   1;  // reducing pessimism
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21418|8): UDP table entry is redundant.
+        1   (0x)    x         ?          :   1   :   1;  
+        |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,21727|8): UDP table entry is redundant.
+         0      (1x)    ?             :  0  :    0   ;   // Reducing pessimism.
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,22171|9): UDP table entry is redundant.
+         1      (1x)    ?             :  1  :    1   ;
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,22172|9): UDP table entry is redundant.
+         0       x      *     1     ?             :  0  :    0   ;   // Reducing pessimism.//AB
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,22480|9): UDP table entry is redundant.
+         1       x      1     *     ?             :  1  :    1   ;   // Reducing pessimism.//AB
+         |
+ncelab: *W,UDPRDT (/opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v,22487|9): UDP table entry is redundant.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:               28856     573
+		UDPs:                  15304      55
+		Primitives:            40931      11
+		Timing outputs:        29007     592
+		Registers:             10054     283
+		Scalar wires:          63240       -
+		Expanded wires:            4       2
+		Always blocks:            13      13
+		Initial blocks:            2       2
+		Cont. assignments:         4     429
+		Pseudo assignments:        6       6
+		Timing checks:         92485   14566
+		Simulation timescale:    1ps
+	Writing initial simulation snapshot: worklib.ad01d0:v
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,9): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$AMSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,10): cds.lib Invalid environment variable ''.
+DEFINE gpdk045		$ANALOG/45nm/gpdk045		
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,15): cds.lib Invalid environment variable ''.
+DEFINE gpdk090		$ANALOG/90nm/libs.oa22/gpdk090
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,16): cds.lib Invalid environment variable ''.
+DEFINE gpdk180		$ANALOG/180nm/libs.oa22/gpdk180
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,17): cds.lib Invalid environment variable ''.
+DEFINE rfLib_new	/home/install/FOUNDRY/rfLib_new
+|
+ncsim: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,19): cds.lib Invalid path '/home/install/FOUNDRY/rfLib_new' (cds.lib command ignored).
+DEFINE cds_ff_mpt	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,20): cds.lib Invalid environment variable ''.
+DEFINE cds_ff_mpt_scl	$FOUNDRY/cds_ff_mpt_v_0.5/cds_ff_mpt_scl
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,21): cds.lib Invalid environment variable ''.
+DEFINE US_8ths 	$CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE cdsDefTechLib 	$CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE ahdlLib 	${CDSHOME}/tools/dfII/samples/artist/ahdlLib
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE avTech 		$ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE sample 		$CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,44): cds.lib Invalid environment variable ''.
+DEFINE connectLib 	$IUSHOME/tools/affirma_ams/etc/connect_lib/connectLib
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,48): cds.lib Invalid environment variable ''.
+DEFINE gpdk045_sc		$STDCELL/gsclib045
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,67): cds.lib Invalid environment variable ''.
+DEFINE gpdk090_sc		$STDCELL/gsclib090
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,68): cds.lib Invalid environment variable ''.
+DEFINE gpdk180_sc		$STDCELL/gsclib180
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,69): cds.lib Invalid environment variable ''.
+DEFINE gpdk45_iolib		$STDCELL/giolib045
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,71): cds.lib Invalid environment variable ''.
+DEFINE umc28hpc /opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc
+|
+ncsim: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,78): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/UMC/28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hpc' (cds.lib command ignored).
+DEFINE umc65ll /opt/tools/Cadence/Cadence_lib/umc65/umc65ll
+|
+ncsim: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,84): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc65/umc65ll' (cds.lib command ignored).
+DEFINE cdsDefTechLib $CDSHOME/tools/dfII/etc/cdsDefTechLib
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,1): cds.lib Invalid environment variable ''.
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,2): cds.lib Invalid environment variable ''.
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/workdir/cds.lib.oa22,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $IUSHOME/tools/affirma_ams/etc/connect_lib/cds.lib
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,95): cds.lib Invalid environment variable ''.
+DEFINE avTech $ASSURAHOME/tools/assura/etc/avtech/avTech
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,96): cds.lib Invalid environment variable ''.
+DEFINE sample $CDSHOME/tools/dfII/samples/cdslib/sample
+|
+ncsim: *W,DLCVAR (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,97): cds.lib Invalid environment variable ''.
+INCLUDE /opt/tools/Cadence/Cadence_lib/cds.lib
+|
+ncsim: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,102): cds.lib No such file '/opt/tools/Cadence/Cadence_lib/cds.lib' (cds.lib command ignored).
+DEFINE umc28hlp /opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp
+|
+ncsim: *W,DLCPTH (/opt/tools/Cadence/Cadence_lib/gpdk/FOUNDRY/cds.lib,105): cds.lib Invalid path '/opt/tools/Cadence/Cadence_lib/umc_28/_G-01-LOGIC_MIXED_MODE28N-HPC/Designkits/Cadence_IC6/umc28hlp' (cds.lib command ignored).
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /opt/tools/Cadence/Cadence_tools/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm micro_tb.CLKOUT micro_tb.clk micro_tb.dbg_out micro_tb.dbg_sel micro_tb.mem_bank_sel micro_tb.rst
+Created probe 1
+ncsim> run
+==== GLS MICROPROCESSOR TESTBENCH ====
+==== RESET DONE ====
+==== TEST COMPLETED ====
+Simulation complete via $finish(1) at time 13200 NS + 0
+./micro_tb.sv:74         $finish;
+ncsim> ^C
+ncsim> exit
+TOOL:	irun(64)	15.20-s086: Exiting on Apr 15, 2026 at 23:00:37 IST  (total: 00:05:11)

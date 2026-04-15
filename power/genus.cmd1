@@ -1,0 +1,30 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.19-s055_1, built May 29 2024 16:33:07
+
+# Date: Wed Apr 15 23:02:42 2026
+# Host: vlsi.iitgn.ac.in (x86_64 w/Linux 3.10.0-693.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz 51200KB)
+# OS:   CentOS Linux release 7.4.1708 (Core) 
+
+read_hdl microprocessor_incremental.v
+elaborate microprocessor
+set_db library {
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_max.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_min.lib
+}
+read_hdl microprocessor_incremental.v
+elaborate microprocessor
+current_design microprocessor
+read_vcd -instance micro_tb/dut micro_gls.vcd
+read_vcd \
+  -vcd_scope micro_tb/dut \
+  -hinst microprocessor \
+  micro_gls.vcd
+read_vcd \
+  -vcd_scope micro_tb/dut \
+  -hinst / \
+  micro_gls.vcd
+read_vcd \
+  -vcd_scope micro_tb/dut \
+  micro_gls.vcd
+report_power > power_with_vcd.rpt

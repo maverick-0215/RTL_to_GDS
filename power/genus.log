@@ -1,0 +1,102 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[22:41:31.427882] Configured Lic search path (21.01-s002): 5280@14.139.1.126:1717@14.139.1.126
+
+Version: 21.19-s055_1, built Wed May 29 04:03:07 PDT 2024
+Options: 
+Date:    Wed Apr 15 22:41:31 2026
+Host:    vlsi.iitgn.ac.in (x86_64 w/Linux 3.10.0-693.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz 51200KB) (528276804KB)
+PID:     5669
+OS:      CentOS Linux release 7.4.1708 (Core) 
+
+*** Stack limited to 64 MB. This run may fail due to lack of stack space. ***
+
+WARNING:Hostname to IPv4 and IPv6 address lookup failed for the host cadence-c2s
+WARNING:Hostname to IPv4 and IPv6 address lookup failed for the host cadence-c2s
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5280@14.139.1.126
+	License Server: 5280@14.139.1.126
+
+[22:41:33.242536] Periodic Lic check successful
+[22:41:33.242562] Feature usage summary:
+[22:41:33.242568] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...WARNING:Hostname to IPv4 and IPv6 address lookup failed for the host cadence-c2s
+
+Finished loading tool scripts (30 seconds elapsed).
+
+WARNING: This version of the tool is 686 days old.
+@genus:root: 1> -gui
+invalid command name "-gui"
+@genus:root: 2> 
+@genus:root: 2> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v
+@genus:root: 3> 
+@genus:root: 3> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3c01.v
+@genus:root: 4> 
+@genus:root: 4> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3d01.v
+@genus:root: 5> 
+@genus:root: 5> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3o05.v
+@genus:root: 6> microprocessor_incremental.v
+invalid command name "microprocessor_incremental.v"
+@genus:root: 7> 
+@genus:root: 7> #microprocessor_pad_top.v
+@genus:root: 8> #Microprocessor.v
+@genus:root: 9> 
+@genus:root: 9> #microprocessor_pad_top_incremental.v
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> 
+@genus:root: 10> micro_tb.sv
+invalid command name "micro_tb.sv"
+@genus:root: 11> 
+@genus:root: 11> -access +rwc
+invalid command name "-access"
+@genus:root: 12> 
+@genus:root: 12> -delay_mode path
+invalid command name "-delay_mode"
+@genus:root: 13> 
+@genus:root: 13> -timescale 1ns/10ps
+invalid command name "-timescale"
+@genus:root: 14> 
+@genus:root: 14> -gui
+invalid command name "-gui"
+@genus:root: 15> 
+@genus:root: 15> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/design_kit/stdlib/fs120/verilog/vcs_sim_model/tsl18fs120_scl.v
+@genus:root: 16> 
+@genus:root: 16> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3c01.v
+@genus:root: 17> 
+@genus:root: 17> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3d01.v
+@genus:root: 18> 
+@genus:root: 18> /opt/tools/Cadence/Cadence_lib/scl_pdk_v2/iolib/cio150/verilog/tsl18cio150/zero/pc3o05.v
+@genus:root: 19> microprocessor_incremental.v
+invalid command name "microprocessor_incremental.v"
+@genus:root: 20> 
+@genus:root: 20> #microprocessor_pad_top.v
+@genus:root: 21> #Microprocessor.v
+@genus:root: 22> 
+@genus:root: 22> #microprocessor_pad_top_incremental.v
+@genus:root: 23> 
+@genus:root: 23> 
+@genus:root: 23> 
+@genus:root: 23> micro_tb.sv
+invalid command name "micro_tb.sv"
+@genus:root: 24> 
+@genus:root: 24> -access +rwc
+invalid command name "-access"
+@genus:root: 25> 
+@genus:root: 25> -delay_mode path
+invalid command name "-delay_mode"
+@genus:root: 26> 
+@genus:root: 26> -timescale 1ns/10ps
+invalid command name "-timescale"
+@genus:root: 27> 

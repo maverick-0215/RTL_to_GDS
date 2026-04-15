@@ -1,0 +1,604 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[23:02:42.427882] Configured Lic search path (21.01-s002): 5280@14.139.1.126:1717@14.139.1.126
+
+Version: 21.19-s055_1, built Wed May 29 04:03:07 PDT 2024
+Options: 
+Date:    Wed Apr 15 23:02:42 2026
+Host:    vlsi.iitgn.ac.in (x86_64 w/Linux 3.10.0-693.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2698 v4 @ 2.20GHz 51200KB) (528276804KB)
+PID:     39369
+OS:      CentOS Linux release 7.4.1708 (Core) 
+
+*** Stack limited to 64 MB. This run may fail due to lack of stack space. ***
+
+WARNING:Hostname to IPv4 and IPv6 address lookup failed for the host cadence-c2s
+WARNING:Hostname to IPv4 and IPv6 address lookup failed for the host cadence-c2s
+Checkout succeeded: Genus_Synthesis/3FFB3787901511A9760E
+	License file: 5280@14.139.1.126
+	License Server: 5280@14.139.1.126
+
+[23:02:44.225867] Periodic Lic check successful
+[23:02:44.225890] Feature usage summary:
+[23:02:44.225891] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...WARNING:Hostname to IPv4 and IPv6 address lookup failed for the host cadence-c2s
+
+Finished loading tool scripts (28 seconds elapsed).
+
+WARNING: This version of the tool is 686 days old.
+@genus:root: 1> read_hdl microprocessor_incremental.v
+@genus:root: 2> elaborate microprocessor
+Error   : Failed to execute command. [LBR-163] [elaborate]
+        : No target technology library was loaded.
+        : Specify libraries using read_libs or read_mmmc.
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+1
+@genus:root: 3> set_db library {
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_max.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_min.lib
+}
+
+Threads Configured:8
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab4' (File /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 88858)
+        : Sequential timing checks, such as 'setup_rising' or 'hold_rising', on flop and latch cells require a clock pin. Verify that the 'clock' attribute of the clock pin is set to 'true' or that the clock pin has a 'clocked_on' attribute.
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab2' (File /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 128076)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab1' (File /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 211354)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab4' (File /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 88865)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab2' (File /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 128091)
+Warning : Missing clock pin in the sequential cell. [LBR-525]
+        : Clock pin absent in sequential cell(s) 'srlab1' (File /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 211382)
+
+  Message Summary for Library all 4 libraries:
+  ********************************************
+  Missing clock pin in the sequential cell. [LBR-525]: 6
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  An unsupported construct was detected in this library. [LBR-40]: 190
+  ********************************************
+ 
+Warning : Libraries have inconsistent nominal operating conditions. In the Liberty library, there are attributes called nom_voltage, nom_process and nom_temperature. Genus reports the message, if the respective values of the 2 given .libs differ. [LBR-38]
+        : The libraries are 'tsl18fs120_scl_ss' and 'tsl18fs120_scl_ff'.
+        : This is a common source of delay calculation confusion and should be avoided.
+Warning : Libraries have inconsistent nominal operating conditions. In the Liberty library, there are attributes called nom_voltage, nom_process and nom_temperature. Genus reports the message, if the respective values of the 2 given .libs differ. [LBR-38]
+        : The libraries are 'tsl18fs120_scl_ss' and 'tsl18cio150_min'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.200000, 1.620000, 125.000000) in library 'tsl18fs120_scl_ss.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.200000, 1.620000, 125.000000) in library 'tsl18cio150_max.lib'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (0.800000, 1.980000, -40.000000) in library 'tsl18fs120_scl_ff.lib'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (0.800000, 1.980000, -40.000000) in library 'tsl18cio150_min.lib'.
+Cell 'slbhb2' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+        : This library has a valid test_cell function, but its regular cell function is either missing or not completely understood (for example, cell has a state_table construct). Consult your library vendor about why this cell is either missing or has an incorrectly specified cell non-test function. Comparing this cell to the other cells that do not display this Warning, can be helpful to debug the issue.
+Cell 'slbhb1' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+Cell 'slbhb4' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : The specified pin is invalid. [LBR-146]
+        : Pin 'Z_reg' is used in data_in function, but does not exist in cell 'slnht4'
+        : Specify the pin name which is an input pin and exist in the cell.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : The specified pin is invalid. [LBR-146]
+        : Pin 'Z_reg' is used in data_in function, but does not exist in cell 'slnht1'
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : The specified pin is invalid. [LBR-146]
+        : Pin 'Z_reg' is used in data_in function, but does not exist in cell 'slnht2'
+Warning : Found libraries with and without pg_pin construct. [LBR-12]
+        : Libraries with and without pg_pin construct have been loaded.
+        : This can lead to issues later in the flow.
+Cell 'slbhb2' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Cell 'slbhb1' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'adiode' must have an output pin.
+Cell 'slbhb4' is avoided.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slbhb4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'cload1' must have an output pin.
+Warning : The specified pin is invalid. [LBR-146]
+        : Pin 'Z_reg' is used in data_in function, but does not exist in cell 'slnht4'
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn2' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnln1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn4' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : The specified pin is invalid. [LBR-146]
+        : Pin 'Z_reg' is used in data_in function, but does not exist in cell 'slnht1'
+Warning : Library cell only has usable test_cell function. [LBR-66]
+        : Cell 'slnhn1' can be used as a regular flop/latch by tying off its test pins, or as a scan flop/latch in 'muxed_scan' style.
+Warning : The specified pin is invalid. [LBR-146]
+        : Pin 'Z_reg' is used in data_in function, but does not exist in cell 'slnht2'
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/aor211d1 and tsl18fs120_scl_ff/aor211d1).  Deleting (tsl18fs120_scl_ff/aor211d1).
+        : Library cell names must be unique.  Any duplicates will be deleted.  Only the first (as determined by the order of libraries) will be retained.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/invtd2 and tsl18fs120_scl_ff/invtd2).  Deleting (tsl18fs120_scl_ff/invtd2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/xn02d2 and tsl18fs120_scl_ff/xn02d2).  Deleting (tsl18fs120_scl_ff/xn02d2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/oai221d1 and tsl18fs120_scl_ff/oai221d1).  Deleting (tsl18fs120_scl_ff/oai221d1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/nd13d2 and tsl18fs120_scl_ff/nd13d2).  Deleting (tsl18fs120_scl_ff/nd13d2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/oai322d2 and tsl18fs120_scl_ff/oai322d2).  Deleting (tsl18fs120_scl_ff/oai322d2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/dfnrq2 and tsl18fs120_scl_ff/dfnrq2).  Deleting (tsl18fs120_scl_ff/dfnrq2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/aor22d2 and tsl18fs120_scl_ff/aor22d2).  Deleting (tsl18fs120_scl_ff/aor22d2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/sdpfb1 and tsl18fs120_scl_ff/sdpfb1).  Deleting (tsl18fs120_scl_ff/sdpfb1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/aoim311d1 and tsl18fs120_scl_ff/aoim311d1).  Deleting (tsl18fs120_scl_ff/aoim311d1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/oai311d2 and tsl18fs120_scl_ff/oai311d2).  Deleting (tsl18fs120_scl_ff/oai311d2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/senrb4 and tsl18fs120_scl_ff/senrb4).  Deleting (tsl18fs120_scl_ff/senrb4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/inv0d2 and tsl18fs120_scl_ff/inv0d2).  Deleting (tsl18fs120_scl_ff/inv0d2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/xr02d1 and tsl18fs120_scl_ff/xr02d1).  Deleting (tsl18fs120_scl_ff/xr02d1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/aoim211d4 and tsl18fs120_scl_ff/aoim211d4).  Deleting (tsl18fs120_scl_ff/aoim211d4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/nr04d1 and tsl18fs120_scl_ff/nr04d1).  Deleting (tsl18fs120_scl_ff/nr04d1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/oaim21d2 and tsl18fs120_scl_ff/oaim21d2).  Deleting (tsl18fs120_scl_ff/oaim21d2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/dl04d1 and tsl18fs120_scl_ff/dl04d1).  Deleting (tsl18fs120_scl_ff/dl04d1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/aon211d1 and tsl18fs120_scl_ff/aon211d1).  Deleting (tsl18fs120_scl_ff/aon211d1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (tsl18fs120_scl_ss/sdbrb2 and tsl18fs120_scl_ff/sdbrb2).  Deleting (tsl18fs120_scl_ff/sdbrb2).
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-22'.
+  Setting attribute of root '/': 'library' = 
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_max.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_min.lib
+
+1 {
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_max.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib
+ /opt/tools/Cadence/Cadence_lib/scl_pdk_v3/SCLPDK_V3.0_KIT/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_min.lib
+}
+@genus:root: 4> read_hdl microprocessor_incremental.v
+module branch(op_a, op_b, fun3, en, result);
+            |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'branch' with Verilog module in file 'microprocessor_incremental.v' on line 7, column 13.
+        : A Verilog description is replaced when a new description of the same name and same library is read again.
+    Verilog descriptions are:
+       module
+       macromodule
+       configuration
+    SystemVerilog adds the following descriptions:
+       interface
+       program
+       package.
+module decode_pipe(clk, rst, load_in, store_in, jalr_in, next_sel_in,
+                 |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'decode_pipe' with Verilog module in file 'microprocessor_incremental.v' on line 728, column 18.
+module control_decoder(fun3, fun7, i_type, r_type, load, store, branch,
+                     |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'control_decoder' with Verilog module in file 'microprocessor_incremental.v' on line 1518, column 22.
+module type_decoder(opcode, r_type, i_type, load, store, branch, jal,
+                  |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'type_decoder' with Verilog module in file 'microprocessor_incremental.v' on line 1620, column 19.
+module controlunit(opcode, fun3, fun7, valid, load_control, reg_write,
+                 |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'controlunit' with Verilog module in file 'microprocessor_incremental.v' on line 1658, column 18.
+module immediategen(instr, imm_sel, imm_out);
+                  |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'immediategen' with Verilog module in file 'microprocessor_incremental.v' on line 1698, column 19.
+module mux(a, b, sel, out);
+         |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'mux' with Verilog module in file 'microprocessor_incremental.v' on line 1788, column 10.
+module mux_469(a, b, sel, out);
+             |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'mux_469' with Verilog module in file 'microprocessor_incremental.v' on line 1829, column 14.
+module registerfile(clk, rst, en, rs1, rs2, rd, data, op_a, op_b,
+                  |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'registerfile' with Verilog module in file 'microprocessor_incremental.v' on line 1870, column 19.
+module decode(clk, rst, valid, reg_write_en_in, load_control_signal,
+            |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'decode' with Verilog module in file 'microprocessor_incremental.v' on line 6951, column 13.
+module execute_forwarding(reg_write_memstage, reg_write_wb,
+                        |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'execute_forwarding' with Verilog module in file 'microprocessor_incremental.v' on line 7014, column 25.
+module execute_pipe(clk, rst, load_in, store_in, reg_write_in,
+                  |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'execute_pipe' with Verilog module in file 'microprocessor_incremental.v' on line 7740, column 19.
+module adder(a, adder_out);
+           |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'adder' with Verilog module in file 'microprocessor_incremental.v' on line 8099, column 12.
+module alu(a_i, b_i, op_i, res_o);
+         |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'alu' with Verilog module in file 'microprocessor_incremental.v' on line 8220, column 10.
+module execute(a_i, b_i, alu_control, pc_address, alu_res_out,
+             |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'execute' with Verilog module in file 'microprocessor_incremental.v' on line 11737, column 14.
+module fetch_pipe(clk, rst, pre_address_pc, instruction_fetch,
+                |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'fetch_pipe' with Verilog module in file 'microprocessor_incremental.v' on line 11755, column 17.
+module pc(clk, rst, stall, redirect, next_address, address_out,
+        |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'pc' with Verilog module in file 'microprocessor_incremental.v' on line 12049, column 9.
+module fetch(clk, rst, next_sel, load_use_stall, jalr_execute,
+           |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'fetch' with Verilog module in file 'microprocessor_incremental.v' on line 12331, column 12.
+module wrappermem(data_i, byteadd, fun3, mem_en, Load, data_valid,
+                |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'wrappermem' with Verilog module in file 'microprocessor_incremental.v' on line 12431, column 17.
+module memory_stage(rst, load, store, valid, data_valid, op_b,
+                  |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'memory_stage' with Verilog module in file 'microprocessor_incremental.v' on line 12709, column 19.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'VLOGPT-6'.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'branch' in library 'default' with newly read Verilog module 'branch' in the same library in file 'microprocessor_incremental.v' on line 7.
+        : A newly read VHDL entity replaces any previously read Verilog module or VHDL entity in the same library if its name matches (case-insensitively) the existing module or entity.
+    For instance:
+        VHDL 'foo'                  replaces  VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        VHDL 'foo' (in any library) replaces  Verilog {'FOO' or 'foo' or 'Foo' or ...} in the same library
+ 
+A newly read Verilog module replaces any previously read Verilog module if its name matches (case-sensitively) that module.  Further, it replaces any previously read VHDL entity in the same library if its name matches (case -insensitively) that entity.
+    For instance:
+        Verilog 'foo' replaces    VHDL {'FOO' or 'foo' or 'Foo' or ...} in the same library
+        Verilog 'foo' replaces    Verilog 'foo' only
+    In addition:
+        Verilog 'foo' does not replace Verilog 'FOO' and the two remain as distinct modules.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'decode_pipe' in library 'default' with newly read Verilog module 'decode_pipe' in the same library in file 'microprocessor_incremental.v' on line 728.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'control_decoder' in library 'default' with newly read Verilog module 'control_decoder' in the same library in file 'microprocessor_incremental.v' on line 1518.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'type_decoder' in library 'default' with newly read Verilog module 'type_decoder' in the same library in file 'microprocessor_incremental.v' on line 1620.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'controlunit' in library 'default' with newly read Verilog module 'controlunit' in the same library in file 'microprocessor_incremental.v' on line 1658.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'immediategen' in library 'default' with newly read Verilog module 'immediategen' in the same library in file 'microprocessor_incremental.v' on line 1698.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'mux' in library 'default' with newly read Verilog module 'mux' in the same library in file 'microprocessor_incremental.v' on line 1788.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'mux_469' in library 'default' with newly read Verilog module 'mux_469' in the same library in file 'microprocessor_incremental.v' on line 1829.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'registerfile' in library 'default' with newly read Verilog module 'registerfile' in the same library in file 'microprocessor_incremental.v' on line 1870.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'decode' in library 'default' with newly read Verilog module 'decode' in the same library in file 'microprocessor_incremental.v' on line 6951.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'execute_forwarding' in library 'default' with newly read Verilog module 'execute_forwarding' in the same library in file 'microprocessor_incremental.v' on line 7014.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'execute_pipe' in library 'default' with newly read Verilog module 'execute_pipe' in the same library in file 'microprocessor_incremental.v' on line 7740.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'adder' in library 'default' with newly read Verilog module 'adder' in the same library in file 'microprocessor_incremental.v' on line 8099.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'alu' in library 'default' with newly read Verilog module 'alu' in the same library in file 'microprocessor_incremental.v' on line 8220.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'execute' in library 'default' with newly read Verilog module 'execute' in the same library in file 'microprocessor_incremental.v' on line 11737.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'fetch_pipe' in library 'default' with newly read Verilog module 'fetch_pipe' in the same library in file 'microprocessor_incremental.v' on line 11755.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'pc' in library 'default' with newly read Verilog module 'pc' in the same library in file 'microprocessor_incremental.v' on line 12049.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'fetch' in library 'default' with newly read Verilog module 'fetch' in the same library in file 'microprocessor_incremental.v' on line 12331.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'wrappermem' in library 'default' with newly read Verilog module 'wrappermem' in the same library in file 'microprocessor_incremental.v' on line 12431.
+Warning : Replacing previously read Verilog module or VHDL entity. [HPT-76]
+        : Replacing Verilog module 'memory_stage' in library 'default' with newly read Verilog module 'memory_stage' in the same library in file 'microprocessor_incremental.v' on line 12709.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'HPT-76'.
+@genus:root: 5> elaborate microprocessor
+Warning : Libcell will be treated as a timing model. [LBR-158]
+        : Lib_pin 'bh01d1/I' has no incoming arcs.
+        : Ensure that the relevant timing arcs are defined in the Liberty model of the libcell.
+  Libraries have 328 usable logic and 153 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'microprocessor' from file 'microprocessor_incremental.v'.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instr' of instance 'u_imm_gen0' of module 'immediategen' in file 'microprocessor_incremental.v' on line 7000, column 28, hid = 0.
+        : Run check_design to check 'Undriven Port(s)/Pin(s)' section for all undriven module input ports. It is better to double confirm with designer if these undriven ports are expected. During syn_gen the undriven ports are controlled by attribute 'hdl_unconnected_value', the default value is 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'd' of instance 'u_mux2' of module 'mux2_4' in file 'microprocessor_incremental.v' on line 13417, column 16, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'rs1_in' of instance 'u_decodepipeline' of module 'decode_pipe' in file 'microprocessor_incremental.v' on line 13623, column 31, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'rs2_in' of instance 'u_decodepipeline' of module 'decode_pipe' in file 'microprocessor_incremental.v' on line 13623, column 31, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'alu_control_in' of instance 'u_decodepipeline' of module 'decode_pipe' in file 'microprocessor_incremental.v' on line 13623, column 31, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instruction_in' of instance 'u_decodepipeline' of module 'decode_pipe' in file 'microprocessor_incremental.v' on line 13640, column 36, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instruction_rd' of instance 'u_decodestage' of module 'decode' in file 'microprocessor_incremental.v' on line 13652, column 23, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instruction_execute' of instance 'u_execute_forwarding' of module 'execute_forwarding' in file 'microprocessor_incremental.v' on line 13685, column 42, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'next_sel_addr' of instance 'u_executepipeline' of module 'execute_pipe' in file 'microprocessor_incremental.v' on line 13731, column 54, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instruction_fetch' of instance 'u_fetchpipeline' of module 'fetch_pipe' in file 'microprocessor_incremental.v' on line 13747, column 29, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instruction_fetch' of instance 'u_fetchstage' of module 'fetch' in file 'microprocessor_incremental.v' on line 13756, column 21, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'valid' of instance 'u_memorystage' of module 'memory_stage' in file 'microprocessor_incremental.v' on line 13782, column 29, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'alu_out_address' of instance 'u_memorystage' of module 'memory_stage' in file 'microprocessor_incremental.v' on line 13782, column 29, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instruction' of instance 'u_memorystage' of module 'memory_stage' in file 'microprocessor_incremental.v' on line 13782, column 29, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'instruction' of instance 'u_core' of module 'core' in file 'microprocessor_incremental.v' on line 54408, column 14, hid = 0.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'microprocessor'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+-------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (s) | 
+-------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |        0.00 | 
+-------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: microprocessor, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: microprocessor, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.002s)
+
+Stage: post_elab
+--------------------------------------------------------
+| Transform          | Accepts | Rejects | Runtime (s) | 
+--------------------------------------------------------
+| hlo_clip_mux_input |       0 |       0 |        0.00 | 
+| hlo_clip           |       0 |       0 |        0.00 | 
+--------------------------------------------------------
+      flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+design:microprocessor
+@genus:root: 6> current_design microprocessor
+design:microprocessor
+@genus:design:microprocessor 7> 
+@genus:design:microprocessor 7> read_vcd -instance micro_tb/dut micro_gls.vcd
+Error   : A command argument did not match any of the acceptable command options. [TUI-64] [parse_options]
+        : The argument in question is 'micro_tb/dut'.
+        : Check the command usage and correct the input to the command.
+  read_vcd: reads in Value Change Dump (VCD) file for power analysis 
+
+Usage: read_vcd [-static] [-scale <string>] [-start_time <float>]
+           [-end_time <float>] [-time_window <float>] [-activity_profile]
+           [-vcd_scope <string>] [-hinst <string>] [-simvision]
+           [-write_sst2 <string>] [-nocase] [-scale_to_sdc_frequency] <string>
+
+    [-static]:
+        do static VCD analysis 
+    [-scale <string>]:
+        the scaling factor 
+    [-start_time <float>]:
+        time in picoseconds at which VCD analysis starts 
+    [-end_time <float>]:
+        time in picoseconds at which VCD analysis ends 
+    [-time_window <float>]:
+        period in picoseconds for doing incremental analysis 
+    [-activity_profile]:
+        monitor switching activity of objects in VCD file 
+    [-vcd_scope <string>]:
+        the instance for VCD parsing 
+    [-hinst <string>]:
+        the instance in the design hierarchy corresponding to the instance in 
+        the VCD selected for parsing 
+    [-simvision]:
+        generate SST2 database for running simvision (default false) 
+    [-write_sst2 <string>]:
+        SST2 database file name for viewing in other waveform viewers 
+    [-nocase]:
+        ignore the case for finding design objects (default false) 
+    [-scale_to_sdc_frequency]:
+        scales activities to sdc activities 
+    <string>:
+        the name of the VCD file 
+@genus:design:microprocessor 8> read_vcd \
+  -vcd_scope micro_tb/dut \
+  -hinst microprocessor \
+  micro_gls.vcd
+Error   : Incorrect '-instance' option. [VCD-23] [read_vcd]
+        :  instance supplied microprocessor
+        : The instance name specified could not be found in the design.
+@genus:design:microprocessor 9> read_vcd \
+  -vcd_scope micro_tb/dut \
+  -hinst / \
+  micro_gls.vcd
+Error   : Incorrect '-instance' option. [VCD-23] [read_vcd]
+        :  instance supplied /
+@genus:design:microprocessor 10> read_vcd \
+  -vcd_scope micro_tb/dut \
+  micro_gls.vcd
+Warning : None of '-static' or '-activity_profile' options given. [VCD-4]
+        : Static analysis will be done on the VCD file 'micro_gls.vcd'.
+        : The '-static' option has been selected by default. To specify explicitly, use at least one of '-static' or '-activity_profile' options.
+Info    : Joules engine is used. [RPT-16]
+        : Joules parser is being used for the command read_vcd.
+Info   : STIM-0001 [StimInfo] read_stimulus effective options 
+       : -file : micro_gls.vcd
+       : -dut_instance : micro_tb/dut
+       : -design_root : design:microprocessor
+       : -format : vcd
+Info   : STIM-0001 Design top is microprocessor
+Info   : STIM-0001 Started reading input stimulus file micro_gls.vcd
+Info   : STIM-0001 Found top instance /micro_tb/dut
+Info   : STIM-0002 [StimInfo] Finished design hierarchy parsing.
+Info   : STIM-0010 [StimInfo] Total number of frames '1'
+Info   : STIM-0002 Started value change section parsing.
+Info   : STIM-0012 [StimInfo] Simulation start = 0 ps, end = 13200000 ps.
+Info   : STIM-0002 Finished processing value changes, started storage.
+Info   : STIM-0002 Stimulus has been identified as a gate level stimulus,
+       : switching on -allow_n_nets option..
+Info   : STIM-0007 [StimInfo] Stored stimulus information '/stim#1' in SDB.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin instruction.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin rs1_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting probability 0.50000 on undriven hierarchical pin rs2_in.
+Warning : The asserted TCF on an undriven hierarchical pin will not be used for TCF propagation. [TUI-94]
+        : Asserting toggle rate 0.00000 on undriven hierarchical pin rs2_in.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'TUI-94'.
+--------------------------- Annotation Report ---------------------------
+Object Type         Asserted  UnAsserted  Unconnected  Total  Asserted% 
+                                           + Constant                   
+-------------------------------------------------------------------------
+Primary Ports                                                           
+  Inputs                   6           0            0      6    100.00% 
+  Outputs                 33           0            0     33    100.00% 
+  I/O                      0           0            0      0        N/A 
+Sequential Outputs                                                      
+  Memory                   0           0            0      0        N/A 
+  Flop                  9857           0            0   9857    100.00% 
+  Latch                    0           0            0      0        N/A 
+  Arch ICGC                0           0            0      0        N/A 
+  Inferred ICGC            0           0            0      0        N/A 
+  Total ICGC               0           0            0      0        N/A 
+Drivers                                                                 
+  Driver nets          28484           0            0  28484    100.00% 
+  RTL Driver nets      28478           0            0  28478    100.00% 
+DFT                                                                     
+  Input Ports              0           0            0      0        N/A 
+  Flop Outputs             0           0            0      0        N/A 
+  Memory Outputs           0           0            0      0        N/A 
+-------------------------------------------------------------------------
+Info   : STIM-0013 [StimInfo] Completed successfully.
+       : Info=11, Warn=0, Error=0, Fatal=0
+Info: Removing all stims from SDB
+@genus:design:microprocessor 11> report_power > power_with_vcd.rpt
+Info    : Joules engine is used. [RPT-16]
+        : Joules engine is being used for the command report_power.
+Info   : ACTP-0001 [ACTPInfo] Activity propagation started for stim#0 netlist
+       : microprocessor
+Info   : ACTP-0001 Activity propagation ended for stim#0
+Info   : PWRA-0001 [PwrInfo] compute_power effective options 
+       : -mode : lp_asserted
+       : -skip_propagation : 1
+       : -frequency_scaling_factor : 1.0
+       : -use_clock_freq : stim
+       : -stim :/stim#0
+       : -fromGenus : 1
+Info   : ACTP-0001 Timing initialization started
+Info   : ACTP-0001 Timing initialization ended
+Info   : PWRA-0002 [PwrInfo] Skipping activity propagation due to -skip_ap
+       : option....
+Info   : PWRA-0002 Started 'average' power computation from attr values.
+Info   : PWRA-0009 [PwrInfo] Power Computation Progress Report :   3%   7%  10%  14%  17%  21%  24%  28%  31%  35%  38%  42%  45%  49%  52%  56%  59%  63%  66%  70%  73%  77%  80%  84%  87%  91%  96% 100%
+Info   : PWRA-0002 Finished power computation.
+Info   : PWRA-0007 [PwrInfo] Completed successfully.
+       : Info=6, Warn=0, Error=0, Fatal=0
+Output file: power_with_vcd.rpt
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server "localhost:15.0"
+      after 3247 requests (3236 known processed) with 0 events remaining.
