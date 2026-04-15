@@ -15,6 +15,11 @@
 - **gds_related/:** Final GDS layout (risc_v.gds)
 - **drc/:** Design Rule Check reports
 
+### Work Directory (Flow Run Database)
+- **work/:** Tool-generated project workspace containing run databases, intermediate implementation states, verification/signoff collateral, and supporting logs/artifacts generated across the RTL-to-GDS flow.
+
+**Note:** The required checklist deliverables are there under **genus files/** (synthesis outputs/reports) and **innovus files/** (P&R/signoff outputs/reports), as described above.
+
 ---
 
 ## Critical Path Information
