@@ -116,8 +116,6 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 #### Key Observations
 - **Total Power**: **24.19 mW**
 - **Registers dominate (~97.6%)**
-- **Switching Power**: ~1.96%
-- **Leakage Power**: ~0.05%
 - **Memory Power**: 0 (inactive/not exercised)
 
 
