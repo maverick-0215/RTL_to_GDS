@@ -66,8 +66,6 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 	- The files include generic netlists, mapped netlists, SDC files, area reports, gate reports, QoR reports, and timing reports.
 	- Genus schematic views captured after synthesis are shown below.
 
-	![Genus synthesis stage](images/CLT%20synthesis.png)
-	
 	![Genus synthesis schematic top level](images/genus%20synthesis%20schematic%20top%20level.png)
 	![Genus synth schematic microprocessor module](images/genus%20synth%20schematic%20microprocceser%20module.png)
 	![Genus synth schematic core](images/genus%20synth%20schematic%20core.png)
@@ -89,6 +87,8 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 5. Clock tree synthesis (CTS) and post-CTS optimization
 	- Clock tree synthesis is run with the CTS script.
 	- Post-CTS timing cleanup and optimization are performed to reduce or remove violating paths.
+
+	![Clock tree synthesis stage](images/CLT%20synthesis.png)
 
 6. Routing and signoff
 	- Nano-routing completes the routed implementation.
