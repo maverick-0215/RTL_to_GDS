@@ -64,33 +64,41 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 	- Run the Genus flow from the RTL directory using the provided TCL flow file.
 	- The synthesis checkpoints are captured in the generic, mapped, optimized, and final reports under [genus files/](genus%20files/) and [rtl design/reports/](rtl%20design/reports/).
 	- The files include generic netlists, mapped netlists, SDC files, area reports, gate reports, QoR reports, and timing reports.
+	- Genus schematic views captured after synthesis are shown below.
 
-	![Genus synthesis stage](genus%20files/screenshots%20and%20report%20files/images/CLT%20synthesis.png)
+	![Genus synthesis stage](images/CLT%20synthesis.png)
+	
+	![Genus synthesis schematic top level](images/genus%20synthesis%20schematic%20top%20level.png)
+	![Genus synth schematic microprocessor module](images/genus%20synth%20schematic%20microprocceser%20module.png)
+	![Genus synth schematic core](images/genus%20synth%20schematic%20core.png)
 
 3. Floorplanning and power planning in Innovus
 	- The floorplan is built with explicit die/core sizing and core margins.
 	- I/O fillers and pad ring connectivity are added before power network creation.
 	- Power rings and stripes are then created on the top metal layers, followed by route-aware placement setup.
 
-	![I/O port summary in Innovus](genus%20files/screenshots%20and%20report%20files/images/io_port_summary_innovus.png)
-	![VDD and VSS ring/rail planning](genus%20files/screenshots%20and%20report%20files/images/vdd_vss_alternating.png)
+	![I/O port summary in Innovus](images/io_port_summary_innovus.png)
+	![VDD and VSS ring/rail planning](images/vdd_vss_alternating.png)
 
-4. Placement, CTS, and optimization
+4. Placement in Innovus
 	- Placement is performed with congestion-aware settings.
-	- Pre-CTS timing is checked before optimization.
-	- Clock tree synthesis is run with the CTS script, followed by post-CTS timing cleanup and optimization to reduce or remove violating paths.
+	- Pre-CTS timing is checked before clock tree insertion.
 
-	![Innovus placed and routed layout view](genus%20files/screenshots%20and%20report%20files/images/innovus_layout.png)
+	![Innovus placed and routed layout view](images/innovus_layout.png)
 
-5. Routing and signoff
+5. Clock tree synthesis (CTS) and post-CTS optimization
+	- Clock tree synthesis is run with the CTS script.
+	- Post-CTS timing cleanup and optimization are performed to reduce or remove violating paths.
+
+6. Routing and signoff
 	- Nano-routing completes the routed implementation.
 	- Signoff checks cover DRC and netlist connectivity.
 	- The final signoff netlists and GDS-related files are stored under [innovus files/](innovus%20files/).
 
-	![Connectivity check](genus%20files/screenshots%20and%20report%20files/images/connectivity.png)
-	![DRC check](genus%20files/screenshots%20and%20report%20files/images/drc_checks_innovus.png)
-	![Final layout view in Virtuoso](genus%20files/screenshots%20and%20report%20files/images/virtuoso_layout.png)
-	![Alternate final layout view](genus%20files/screenshots%20and%20report%20files/images/virtuoso_layout_1.png)
+	![Connectivity check](images/connectivity.png)
+	![DRC check](images/drc_checks_innovus.png)
+	![Final layout view in Virtuoso](images/virtuoso_layout.png)
+	![Alternate final layout view](images/virtuoso_layout_1.png)
 
 ## What Each Folder Contains
 
@@ -107,7 +115,7 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 - [genus files/map netlist files/](genus%20files/map%20netlist%20files/) contains the mapped netlist and timing constraint view used for technology mapping.
 - [genus files/report gates and utlization/](genus%20files/report%20gates%20and%20utlization/) contains the final synthesis area, gate-count, and QoR reports.
 - [genus files/slack and critical path/](genus%20files/slack%20and%20critical%20path/) contains the final timing report with the worst-case path.
-- [genus files/screenshots and report files/images/](genus%20files/screenshots%20and%20report%20files/images/) contains the screenshots used to document synthesis and Innovus milestones.
+- [images/](images/) contains the screenshots used to document synthesis and Innovus milestones, including Genus schematic snapshots.
 - [genus files/screenshots and report files/reports/](genus%20files/screenshots%20and%20report%20files/reports/) contains the full synthesis report set mirrored from the flow.
 
 ### Innovus Files
@@ -182,6 +190,6 @@ This repository documents the RTL-to-GDS implementation flow for the `microproce
 
 1. Start with the flow overview in this README.
 2. Inspect the synthesis reports under [rtl design/reports/](rtl%20design/reports/) and [genus files/](genus%20files/).
-3. Review the screenshots in [genus files/screenshots and report files/images/](genus%20files/screenshots%20and%20report%20files/images/).
+3. Review the screenshots in [images/](images/).
 4. Check the signoff files in [innovus files/netlist_to_gds/](innovus%20files/netlist_to_gds/) and [innovus files/drc/](innovus%20files/drc/).
 5. Use [work/](work/) if you need the full flow database or intermediate implementation state.
